@@ -334,6 +334,59 @@ def build_search(articles: list[dict]) -> None:
     )
 
 
+def feed_article_html(article: dict) -> str:
+    feature = article["images"][0]
+    feature_url = SITE_URL + feature["path"]
+    quick = "".join(f"<li>{escape(str(x))}</li>" for x in article.get("quick_read", []))
+    body = article_body_html(article, SITE_URL)
+
+    sources = "".join(
+        f'<li><a href="{escape(str(s["url"]), quote=True)}">{escape(str(s["title"]))}</a>'
+        f'{" · " + escape(str(s.get("organization", ""))) if s.get("organization") else ""}</li>'
+        for s in article.get("sources", [])
+    )
+
+    caption_bits = [
+        str(feature.get("caption", "")),
+        str(feature.get("credit", "")),
+        str(feature.get("license", "")),
+    ]
+    caption = " · ".join(escape(x) for x in caption_bits if x)
+
+    article_url = SITE_URL + f"articles/{article['slug']}/"
+    return (
+        f'<article>'
+        f'<h2><a href="{escape(article_url, quote=True)}">{escape(str(article["title"]))}</a></h2>'
+        f'<p>{escape(str(article["summary"]))}</p>'
+        f'<p><strong>{escape(str(article["category"]))}</strong> · '
+        f'{escape(str(article["difficulty"]))} · '
+        f'预计阅读 {int(article["reading_minutes"])} 分钟</p>'
+        f'<img src="{escape(feature_url, quote=True)}" alt="{escape(str(feature.get("alt", "")), quote=True)}">'
+        f'<p><small>{caption}</small></p>'
+        f'<h3>30 秒速读</h3><ul>{quick}</ul>'
+        f'{body}'
+        f'<h3>核心来源</h3><ol>{sources}</ol>'
+        f'<p><a href="{escape(article_url, quote=True)}">在网站中打开本文</a></p>'
+        f'</article>'
+    )
+
+
+def feed_issue_html(issue: dict) -> str:
+    parts = [
+        f'<h1>{escape(str(issue["title"]))}</h1>',
+        f'<p>{escape(str(issue.get("daily_summary", "")))}</p>',
+    ]
+    for article in issue.get("article_objects", []):
+        parts.append(feed_article_html(article))
+        parts.append("<hr>")
+    issue_url = SITE_URL + issue["url"]
+    parts.append(
+        f'<p><a href="{escape(issue_url, quote=True)}">在网站中打开第'
+        f'{int(issue["issue"]):03d}期</a></p>'
+    )
+    return "".join(parts)
+
+
 def build_feeds(issues: list[dict]) -> None:
     items = []
     for issue in reversed(issues[-30:]):
@@ -343,37 +396,56 @@ def build_feeds(issues: list[dict]) -> None:
         else:
             dt = datetime.combine(date, datetime.min.time(), tzinfo=TZ)
         link = SITE_URL + issue["url"]
-        items.append((issue, dt, link, issue.get("daily_summary", "")))
+        summary = issue.get("daily_summary", "")
+        full_html = feed_issue_html(issue)
+        items.append((issue, dt, link, summary, full_html))
 
     rss_items = "\n".join(
-        f"<item><title>{escape(SITE_NAME + ' · 第' + str(int(issue['issue'])).zfill(3) + '期')}</title>"
-        f"<link>{escape(link)}</link><guid>{escape(link)}</guid>"
-        f"<pubDate>{format_datetime(dt)}</pubDate><description>{escape(desc)}</description></item>"
-        for issue, dt, link, desc in items
+        f"<item>"
+        f"<title>{escape(SITE_NAME + ' · 第' + str(int(issue['issue'])).zfill(3) + '期 · ' + str(issue['title']))}</title>"
+        f"<link>{escape(link)}</link>"
+        f"<guid>{escape(link)}</guid>"
+        f"<pubDate>{format_datetime(dt)}</pubDate>"
+        f"<description>{escape(summary)}</description>"
+        f"<content:encoded><![CDATA[{full_html.replace(']]>', ']]&gt;')}]]></content:encoded>"
+        f"</item>"
+        for issue, dt, link, summary, full_html in items
     )
     rss = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        f"<rss version=\"2.0\"><channel><title>{SITE_NAME}</title>"
-        f"<link>{SITE_URL}</link><description>{escape(CONFIG['description'])}</description>"
+        f'<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">'
+        f"<channel><title>{escape(SITE_NAME)}</title>"
+        f"<link>{escape(SITE_URL)}</link>"
+        f"<description>{escape(CONFIG['description'])}</description>"
+        f"<language>zh-CN</language>"
+        f"<lastBuildDate>{format_datetime(datetime.now(TZ))}</lastBuildDate>"
         f"{rss_items}</channel></rss>"
     )
     (SITE / "feed.xml").write_text(rss, encoding="utf-8")
 
     atom_entries = "\n".join(
-        f"<entry><title>{escape(SITE_NAME + ' · 第' + str(int(issue['issue'])).zfill(3) + '期')}</title>"
-        f"<link href=\"{escape(link)}\"/><id>{escape(link)}</id>"
-        f"<updated>{dt.isoformat()}</updated><summary>{escape(desc)}</summary></entry>"
-        for issue, dt, link, desc in items
+        f"<entry>"
+        f"<title>{escape(SITE_NAME + ' · 第' + str(int(issue['issue'])).zfill(3) + '期 · ' + str(issue['title']))}</title>"
+        f'<link href="{escape(link, quote=True)}"/>'
+        f"<id>{escape(link)}</id>"
+        f"<updated>{dt.isoformat()}</updated>"
+        f"<summary>{escape(summary)}</summary>"
+        f'<content type="html">{escape(full_html)}</content>'
+        f"</entry>"
+        for issue, dt, link, summary, full_html in items
     )
     updated = items[0][1].isoformat() if items else datetime.now(TZ).isoformat()
     atom = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        f"<feed xmlns=\"http://www.w3.org/2005/Atom\"><title>{SITE_NAME}</title>"
-        f"<id>{SITE_URL}</id><link href=\"{SITE_URL}\"/><updated>{updated}</updated>"
+        f'<feed xmlns="http://www.w3.org/2005/Atom">'
+        f"<title>{escape(SITE_NAME)}</title>"
+        f"<id>{escape(SITE_URL)}</id>"
+        f'<link href="{escape(SITE_URL, quote=True)}"/>'
+        f'<link rel="self" href="{escape(SITE_URL + "atom.xml", quote=True)}"/>'
+        f"<updated>{updated}</updated>"
         f"{atom_entries}</feed>"
     )
     (SITE / "atom.xml").write_text(atom, encoding="utf-8")
-
 
 def build_offline(issues: list[dict]) -> None:
     css = (STATIC / "style.css").read_text(encoding="utf-8")
