@@ -162,9 +162,32 @@ def validate(articles: list[dict], issues: list[dict]) -> None:
             raise ValueError(f"Duplicate article id/slug: {article['id']} / {article['slug']}")
         seen_ids.add(article["id"])
         seen_slugs.add(article["slug"])
-        for img in article.get("images", []):
+        images = article.get("images", [])
+        if not images:
+            raise ValueError(f"{article['source_path']}: at least one image is required")
+        for img in images:
+            image_required = ["path", "download_url", "original_url", "alt", "caption", "credit", "license"]
+            image_missing = [k for k in image_required if not img.get(k)]
+            if image_missing:
+                raise ValueError(f"{article['source_path']}: image metadata missing {image_missing}")
             if not (ROOT / img["path"]).exists():
                 raise FileNotFoundError(f"Missing image: {img['path']}")
+
+        generation = article.get("generation", {})
+        if generation.get("automated"):
+            if article.get("evidence_status") != "verified":
+                raise ValueError(f"{article['source_path']}: automated article is not verified")
+            if not 2 <= len(images) <= 4:
+                raise ValueError(f"{article['source_path']}: automated articles require 2-4 images")
+            if not 3 <= len(article.get("quick_read", [])) <= 5:
+                raise ValueError(f"{article['source_path']}: quick_read must contain 3-5 items")
+            sources = article.get("sources", [])
+            if len(sources) < 3:
+                raise ValueError(f"{article['source_path']}: automated articles require >=3 sources")
+            if not any(int(s.get("tier", 99)) == 1 for s in sources):
+                raise ValueError(f"{article['source_path']}: automated articles require >=1 Tier 1 source")
+            if len(article.get("body_markdown", "")) < 500:
+                raise ValueError(f"{article['source_path']}: automated article body is too short")
 
     if not issues:
         raise ValueError("At least one issue is required")

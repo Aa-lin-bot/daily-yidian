@@ -26,11 +26,12 @@ images:
     credit: Wikimedia Commons
     license: CC BY 2.0
     original_url: https://commons.wikimedia.org/wiki/File:Giant_Pacific_Octopus.jpg
+    download_url: https://upload.wikimedia.org/wikipedia/commons/1/10/Giant_Pacific_Octopus.jpg
 sources:
   - title: Smithsonian National Zoo
     organization: Smithsonian
     url: https://nationalzoo.si.edu/
-    tier: 2
+    tier: 1
     accessed: 2026-09-09
   - title: Encyclopaedia Britannica — Octopus
     organization: Britannica

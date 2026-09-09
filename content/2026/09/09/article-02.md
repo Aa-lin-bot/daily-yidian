@@ -26,6 +26,7 @@ images:
     credit: NASA/JPL-Caltech/SSI
     license: Public Domain
     original_url: https://commons.wikimedia.org/wiki/File:Saturn_global_view_from_Cassini,_rings_open.jpg
+    download_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Saturn_global_view_from_Cassini%2C_rings_open.jpg/960px-Saturn_global_view_from_Cassini%2C_rings_open.jpg
 sources:
   - title: NASA Science — Saturn Facts
     organization: NASA

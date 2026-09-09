@@ -24,8 +24,9 @@ images:
     alt: 世界主要构造板块及边界类型地图
     caption: 地球主要构造板块示意图
     credit: Wikimedia Commons
-    license: Open License
+    license: CC BY-SA 3.0
     original_url: https://commons.wikimedia.org/wiki/File:Tectonic_plates_(2022).svg
+    download_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Tectonic_plates_%282022%29.svg
 sources:
   - title: USGS — This Dynamic Earth
     organization: USGS

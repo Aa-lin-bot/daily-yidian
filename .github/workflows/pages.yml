@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "drafts/**"
+      - "reports/**"
   workflow_dispatch:
 
 permissions:
@@ -36,11 +39,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Prepare local article images
-        run: |
-          mkdir -p assets/images
-          curl --fail --location --retry 3 --user-agent "daily-yidian/2.0" "https://upload.wikimedia.org/wikipedia/commons/1/10/Giant_Pacific_Octopus.jpg" -o assets/images/octopus.jpg
-          curl --fail --location --retry 3 --user-agent "daily-yidian/2.0" "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Saturn_global_view_from_Cassini%2C_rings_open.jpg/960px-Saturn_global_view_from_Cassini%2C_rings_open.jpg" -o assets/images/saturn.jpg
-          curl --fail --location --retry 3 --user-agent "daily-yidian/2.0" "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tectonic_plates_%282022%29.svg" -o assets/images/plates.svg
+        run: python prepare_images.py
 
       - name: Build static magazine
         run: python build.py
