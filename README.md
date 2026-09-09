@@ -1,25 +1,13 @@
 # 每天亿点小知识
 
-个人长期科普电子杂志项目。
+个人长期科普电子杂志。
 
-## 当前阶段
+当前阶段：Phase 2 自动构建层。
 
-Phase 1：静态阅读体验样板。
+内容源从手写 HTML 迁移为 content/YYYY/MM/DD/issue.yml 与 article-xx.md。
 
-已实现：
-- 手机优先响应式首页
-- 第001期
-- 3篇演示百科
-- 深色 / 浅色 / 跟随系统
-- 字体大小三档
-- 阅读进度条
-- 收藏（localStorage）
-- 30秒速读
-- 文内目录
-- 图片大图查看
-- 文章小测验
-- 上一篇 / 下一篇 / 返回本期
+GitHub Actions 自动执行：Markdown + YAML → Python/Jinja2 → 首页 → 期刊页 → 单篇文章页 → 分类/标签 → 往期归档 → 搜索索引 → RSS/Atom → Base64 图片离线 HTML → GitHub Pages。
 
-下一阶段将把页面改造成 Python + Jinja2 + Markdown/YAML 自动构建结构，然后接入 ChatGPT 定时创作 → GitHub 提交 → GitHub Pages 发布。
+本地构建：先安装 requirements.txt，再执行 python build.py。构建产物位于 site/，不需要提交到仓库。
 
-> 当前图片为演示期远程开放授权图片。正式自动刊会下载、记录许可信息并优化后存入仓库。
+下一阶段：接入 ChatGPT 定时任务，使每天的新一期内容按同一 Markdown/YAML 结构自动提交到仓库，随后由本构建流水线自动发布。

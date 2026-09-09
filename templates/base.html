@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{% block description %}每天2—3篇可靠、可追溯、适合手机阅读的科普百科。{% endblock %}">
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
+  <link rel="alternate" type="application/rss+xml" title="{{ site_name }} RSS" href="{{ root }}feed.xml">
+  <link rel="stylesheet" href="{{ root }}static/style.css">
+  <link rel="stylesheet" href="{{ root }}static/phase2.css">
+</head>
+<body{% block body_attrs %}{% endblock %}>
+{% block progress %}{% endblock %}
+<header class="topbar">
+  <div class="shell inner">
+    <a class="brand" href="{{ root }}">{{ site_name }}<small>DAILY KNOWLEDGE MAGAZINE</small></a>
+    <nav class="nav-links">
+      <a href="{{ root }}archive/">往期</a>
+      <a href="{{ root }}categories/">栏目</a>
+      <a href="{{ root }}tags/">标签</a>
+      <a href="{{ root }}search/">搜索</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" data-font-toggle><span class="font-label">Aa</span></button>
+      <button class="icon-btn" data-theme-toggle>◐ 系统</button>
+    </div>
+  </div>
+</header>
+{% block content %}{% endblock %}
+<footer><div class="shell">《{{ site_name }}》 · <a href="{{ root }}feed.xml">RSS</a> · <a href="{{ root }}atom.xml">Atom</a></div></footer>
+<div class="lightbox"><button aria-label="关闭">×</button><img alt="大图查看"></div>
+<script src="{{ root }}static/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

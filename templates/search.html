@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}搜索｜{{ site_name }}{% endblock %}
+{% block content %}
+<main class="shell"><section class="collection-header"><div class="kicker">SEARCH</div><h1>搜索知识库</h1><p>可搜索标题、摘要、栏目和标签。</p></section><div class="search-panel"><input id="search-input" class="search-input" type="search" placeholder="例如：章鱼、土星、板块构造" autocomplete="off"><div id="search-results" class="search-results"></div></div></main>
+{% endblock %}
+{% block scripts %}<script>window.YIDIAN_ROOT='{{ root }}';</script><script src="{{ root }}static/search.js"></script>{% endblock %}

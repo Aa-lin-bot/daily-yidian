@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}｜{{ site_name }}{% endblock %}
+{% block content %}
+<main class="shell"><section class="collection-header"><div class="kicker">INDEX</div><h1>{{ title }}</h1></section><div class="collection-list">{% for c in collections %}<a class="module" href="{{ c.slug }}/"><h3>{{ c.name }}</h3><p>{{ c.articles|length }} 篇文章</p><div class="tag-list">{% for a in c.articles[:4] %}<span class="tag">{{ a.title }}</span>{% endfor %}</div></a>{% endfor %}</div></main>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}往期｜{{ site_name }}{% endblock %}
+{% block content %}
+<main class="shell"><section class="collection-header"><div class="kicker">ARCHIVE</div><h1>往期封面</h1><p>按日期浏览《{{ site_name }}》历史期刊。</p></section><div class="archive-grid">{% for issue in issues %}<a class="archive-card" href="{{ root }}issues/{{ '%03d'|format(issue.issue|int) }}/"><div class="kicker">{{ issue.date }} · 第{{ '%03d'|format(issue.issue|int) }}期</div><h2>{{ issue.title }}</h2><p>{{ issue.daily_summary }}</p></a>{% endfor %}</div></main>
+{% endblock %}

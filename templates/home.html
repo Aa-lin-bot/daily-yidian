@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="shell">
+  <section class="hero">
+    <img src="{{ root }}{{ cover.images[0].path }}" alt="{{ cover.images[0].alt }}">
+    <div class="hero-copy">
+      <div class="kicker">{{ issue.date }} · 第{{ '%03d'|format(issue.issue|int) }}期</div>
+      <h1>{{ issue.title }}</h1>
+      <p>{{ issue.daily_summary }}</p>
+      <div class="issue-meta"><span>{{ articles|length }} 篇百科</span><span>约 {{ articles|sum(attribute='reading_minutes') }} 分钟</span><span>经典百科</span></div>
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><div><div class="kicker">TODAY</div><h2>亿点知识</h2></div><a class="chip-btn" href="issues/{{ '%03d'|format(issue.issue|int) }}/">查看本期</a></div>
+    <div class="grid">
+      {% for a in articles %}
+      <a class="card" href="articles/{{ a.slug }}/">
+        <img loading="lazy" src="{{ root }}{{ a.images[0].path }}" alt="{{ a.images[0].alt }}">
+        <div class="card-body"><div class="meta"><span class="pill">{{ a.category }}</span><span>{{ a.difficulty }}</span><span>{{ a.reading_minutes }} 分钟</span></div><h3>{{ a.title }}</h3><p>{{ a.summary }}</p></div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><div><div class="kicker">EXPLORE</div><h2>继续探索</h2></div></div>
+    <div class="modules">
+      <div class="module"><h3>三大栏目</h3><p><a href="categories/">宇宙与地球 · 生命与自然 · 人类与科学 →</a></p></div>
+      <div class="module"><h3>随机看一篇</h3><p><a href="articles/{{ articles[0].slug }}/">{{ articles[0].title }} →</a></p></div>
+      <div class="module"><h3>往期与订阅</h3><p><a href="archive/">封面归档</a> · <a href="feed.xml">RSS</a> · <a href="downloads/issue-{{ '%03d'|format(issue.issue|int) }}.html" download>下载本期</a></p></div>
+    </div>
+  </section>
+</main>
+{% endblock %}

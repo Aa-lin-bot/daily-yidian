@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}第{{ '%03d'|format(issue.issue|int) }}期｜{{ site_name }}{% endblock %}
+{% block content %}
+<main class="shell">
+<section class="issue-banner"><div class="kicker">ISSUE {{ '%03d'|format(issue.issue|int) }} · {{ issue.date }}</div><h1>{{ issue.title }}</h1><p>{{ issue.daily_summary }}</p><div class="issue-actions"><span>本期共 {{ articles|length }} 篇</span><span>预计阅读约 {{ articles|sum(attribute='reading_minutes') }} 分钟</span><a class="chip-btn" href="{{ root }}downloads/issue-{{ '%03d'|format(issue.issue|int) }}.html" download>下载离线版</a></div></section>
+<div class="grid">{% for a in articles %}<a class="card" href="{{ root }}articles/{{ a.slug }}/"><img loading="lazy" src="{{ root }}{{ a.images[0].path }}" alt="{{ a.images[0].alt }}"><div class="card-body"><div class="meta"><span class="pill">{{ a.category }}</span><span>{{ a.difficulty }}</span><span>{{ a.reading_minutes }} 分钟</span></div><h3>{{ a.title }}</h3><p>{{ a.summary }}</p></div></a>{% endfor %}</div>
+<div class="spacer"></div>
+</main>
+{% endblock %}

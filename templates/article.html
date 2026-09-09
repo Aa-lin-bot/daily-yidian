@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }}｜{{ site_name }}{% endblock %}
+{% block description %}{{ article.summary }}{% endblock %}
+{% block body_attrs %} data-article-id="{{ article.id }}"{% endblock %}
+{% block progress %}<div class="article-progress"></div>{% endblock %}
+{% block content %}
+<main>
+<section class="article-header">
+  <a class="back" href="{{ root }}issues/{{ '%03d'|format(issue.issue|int) }}/">← 返回本期 · 第{{ '%03d'|format(issue.issue|int) }}期</a>
+  <div class="meta"><span class="pill">{{ article.category }}</span><span>{{ article.difficulty }}</span><span>预计阅读 {{ article.reading_minutes }} 分钟</span>{% if article.evidence_status %}<span>{{ article.evidence_status }}</span>{% endif %}</div>
+  <h1>{{ article.title }}</h1><p class="dek">{{ article.summary }}</p>
+  <div class="article-tools"><button class="chip-btn" data-favorite>☆ 收藏</button><a class="chip-btn" href="{{ root }}issues/{{ '%03d'|format(issue.issue|int) }}/">返回本期</a></div>
+</section>
+<figure class="feature"><img class="zoomable" src="{{ root }}{{ article.images[0].path }}" alt="{{ article.images[0].alt }}"><figcaption class="caption">{{ article.images[0].caption }}{% if article.images[0].credit %} · {{ article.images[0].credit }}{% endif %}{% if article.images[0].license %} · {{ article.images[0].license }}{% endif %}</figcaption></figure>
+<article class="reader">
+<section class="quick"><h2>30 秒速读</h2><ul>{% for x in article.quick_read %}<li>{{ x }}</li>{% endfor %}</ul></section>
+{{ article.body_html|safe }}
+{% if article.quiz %}
+<section class="quiz" id="quiz"><h2>读完测一下</h2>{% for q in article.quiz %}<div class="quiz-q" data-quiz><strong>{{ loop.index }}. {{ q.question }}</strong>{% for opt in q.options %}<button data-correct="{{ 'true' if loop.index0 == q.answer else 'false' }}">{{ opt }}</button>{% endfor %}<div class="explain">{{ q.explanation }}</div></div>{% endfor %}</section>
+{% endif %}
+<section class="sources"><h2>核心来源</h2><ol>{% for s in article.sources %}<li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.organization %} · {{ s.organization }}{% endif %}</li>{% endfor %}</ol></section>
+</article>
+<nav class="article-nav"><a href="{{ root }}articles/{{ prev_article.slug }}/"><small>上一篇</small>{{ prev_article.title }}</a><a href="{{ root }}articles/{{ next_article.slug }}/"><small>下一篇</small>{{ next_article.title }}</a></nav>
+</main>
+{% endblock %}
