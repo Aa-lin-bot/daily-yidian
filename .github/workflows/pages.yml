@@ -25,6 +25,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Prepare local article images
+        run: |
+          mkdir -p assets/images
+          curl --fail --location --retry 3 --user-agent "daily-yidian/1.0" "https://upload.wikimedia.org/wikipedia/commons/1/10/Giant_Pacific_Octopus.jpg" -o assets/images/octopus.jpg
+          curl --fail --location --retry 3 --user-agent "daily-yidian/1.0" "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Saturn_global_view_from_Cassini%2C_rings_open.jpg/960px-Saturn_global_view_from_Cassini%2C_rings_open.jpg" -o assets/images/saturn.jpg
+          curl --fail --location --retry 3 --user-agent "daily-yidian/1.0" "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tectonic_plates_%282022%29.svg" -o assets/images/plates.svg
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
