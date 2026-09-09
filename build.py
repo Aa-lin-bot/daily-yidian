@@ -334,7 +334,7 @@ def build_search(articles: list[dict]) -> None:
     )
 
 
-def feed_article_html(article: dict) -> str:
+def feed_article_html(article: dict, number: int | None = None) -> str:
     feature = article["images"][0]
     feature_url = SITE_URL + feature["path"]
     quick = "".join(f"<li>{escape(str(x))}</li>" for x in article.get("quick_read", []))
@@ -354,9 +354,12 @@ def feed_article_html(article: dict) -> str:
     caption = " · ".join(escape(x) for x in caption_bits if x)
 
     article_url = SITE_URL + f"articles/{article['slug']}/"
+    title_text = escape(str(article["title"]))
+    if number is not None:
+        title_text = f"{number}. {title_text}"
     return (
         f'<article>'
-        f'<h2><a href="{escape(article_url, quote=True)}">{escape(str(article["title"]))}</a></h2>'
+        f'<h2><strong><a href="{escape(article_url, quote=True)}">{title_text}</a></strong></h2>'
         f'<p>{escape(str(article["summary"]))}</p>'
         f'<p><strong>{escape(str(article["category"]))}</strong> · '
         f'{escape(str(article["difficulty"]))} · '
@@ -371,13 +374,13 @@ def feed_article_html(article: dict) -> str:
     )
 
 
-def feed_issue_html(issue: dict) -> str:
+def feed_issue_html(issue: dict, numbered: bool = False) -> str:
     parts = [
         f'<h1>{escape(str(issue["title"]))}</h1>',
         f'<p>{escape(str(issue.get("daily_summary", "")))}</p>',
     ]
-    for article in issue.get("article_objects", []):
-        parts.append(feed_article_html(article))
+    for index, article in enumerate(issue.get("article_objects", []), start=1):
+        parts.append(feed_article_html(article, index if numbered else None))
         parts.append("<hr>")
     issue_url = SITE_URL + issue["url"]
     parts.append(
@@ -397,8 +400,9 @@ def build_feeds(issues: list[dict]) -> None:
             dt = datetime.combine(date, datetime.min.time(), tzinfo=TZ)
         link = SITE_URL + issue["url"]
         summary = issue.get("daily_summary", "")
-        full_html = feed_issue_html(issue)
-        items.append((issue, dt, link, summary, full_html))
+        rss_full_html = feed_issue_html(issue, numbered=True)
+        atom_full_html = feed_issue_html(issue, numbered=False)
+        items.append((issue, dt, link, summary, rss_full_html, atom_full_html))
 
     rss_items = "\n".join(
         f"<item>"
@@ -407,9 +411,9 @@ def build_feeds(issues: list[dict]) -> None:
         f"<guid>{escape(link)}</guid>"
         f"<pubDate>{format_datetime(dt)}</pubDate>"
         f"<description>{escape(summary)}</description>"
-        f"<content:encoded><![CDATA[{full_html.replace(']]>', ']]&gt;')}]]></content:encoded>"
+        f"<content:encoded><![CDATA[{rss_full_html.replace(']]>', ']]&gt;')}]]></content:encoded>"
         f"</item>"
-        for issue, dt, link, summary, full_html in items
+        for issue, dt, link, summary, rss_full_html, atom_full_html in items
     )
     rss = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -430,9 +434,9 @@ def build_feeds(issues: list[dict]) -> None:
         f"<id>{escape(link)}</id>"
         f"<updated>{dt.isoformat()}</updated>"
         f"<summary>{escape(summary)}</summary>"
-        f'<content type="html">{escape(full_html)}</content>'
+        f'<content type="html">{escape(atom_full_html)}</content>'
         f"</entry>"
-        for issue, dt, link, summary, full_html in items
+        for issue, dt, link, summary, rss_full_html, atom_full_html in items
     )
     updated = items[0][1].isoformat() if items else datetime.now(TZ).isoformat()
     atom = (
