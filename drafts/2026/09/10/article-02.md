@@ -37,7 +37,7 @@ images:
     credit: Tara Gross / U.S. Geological Survey
     license: Public Domain — U.S. Federal Government work
   - path: assets/images/2026/09/10/la-groundwater-model.jpg
-    download_url: https://upload.wikimedia.org/wikipedia/commons/9/9d/Los_Angeles_Coastal_Plain_Groundwater-flow_Model_%2896716%29.jpg
+    download_url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Los_Angeles_Coastal_Plain_Groundwater-flow_Model_%2896716%29.jpg
     original_url: https://commons.wikimedia.org/wiki/File:Los_Angeles_Coastal_Plain_Groundwater-flow_Model_(96716).jpg
     alt: 洛杉矶沿海平原复杂含水层系统的地下水流模型图
     caption: 洛杉矶沿海平原地下水流模型展示真实含水层系统的复杂结构
