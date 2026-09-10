@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-10",
+  "issue": 2,
+  "status": "verified_draft",
+  "articles": [
+    {
+      "slug": "why-is-the-sky-blue",
+      "core_facts": [
+        {
+          "claim": "晴朗天空呈蓝色主要源于空气分子对短波长可见光更强的瑞利散射。",
+          "status": "verified",
+          "support": ["NOAA NESDIS Why Is the Sky Blue?", "NASA Space Place Why Is the Sky Blue?", "NWS Flagstaff Why Is The Sky Blue?"]
+        },
+        {
+          "claim": "瑞利散射强度近似与波长四次方成反比，因此蓝紫光比红光更易散射。",
+          "status": "verified",
+          "support": ["NWS Flagstaff Why Is The Sky Blue?", "NOAA Global Monitoring Laboratory Red Sky"]
+        },
+        {
+          "claim": "日出日落时更长的大气光程使更多短波光散射出直视方向，暖色成分相对突出。",
+          "status": "verified",
+          "support": ["NOAA NESDIS Why Is the Sky Blue?", "NASA Space Place Why Is the Sky Blue?", "NOAA Global Monitoring Laboratory Red Sky"]
+        },
+        {
+          "claim": "天空不呈纯紫色与太阳光谱、大气吸收和人眼对蓝紫波段的响应共同有关。",
+          "status": "verified",
+          "support": ["NOAA NESDIS Why Is the Sky Blue?", "NWS Flagstaff Why Is The Sky Blue?"]
+        }
+      ],
+      "image_checks": [
+        {"file": "Blue sky image.jpg", "license": "CC0 1.0", "author": "Renukarenu1861", "status": "verified_on_commons_description_page"},
+        {"file": "Rayleigh sunlight scattering-int.svg", "license": "CC0 1.0", "author": "Д.Ильин", "status": "verified_on_commons_description_page"},
+        {"file": "Sunset with Clouds.jpg", "license": "CC0 1.0", "author": "Xoqoni Said", "status": "verified_on_commons_description_page"}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "how-groundwater-lives-in-rock",
+      "core_facts": [
+        {
+          "claim": "地下水通常填充在饱和带土壤和岩石的孔隙、裂隙中，而非普遍存在于地下河湖。",
+          "status": "verified",
+          "support": ["USGS Groundwater — What is Groundwater?", "USGS How Do Hydrologists Locate Groundwater?", "USGS Groundwater Basics"]
+        },
+        {
+          "claim": "水位面是饱和带上边界，其上方不饱和带的孔隙同时含空气和水。",
+          "status": "verified",
+          "support": ["USGS Aquifers and Groundwater", "USGS Groundwater — What is Groundwater?"]
+        },
+        {
+          "claim": "含水层可利用性取决于储水空间以及允许水移动的渗透性；孔隙或裂隙连通性十分重要。",
+          "status": "verified",
+          "support": ["USGS Aquifers and Groundwater", "USGS How Do Hydrologists Locate Groundwater?"]
+        },
+        {
+          "claim": "井抽水会降低附近地下水位，抽取超过补给时可能形成明显降落漏斗并影响邻井。",
+          "status": "verified",
+          "support": ["USGS Aquifers and Groundwater", "USGS Cone of depression media explanation"]
+        }
+      ],
+      "image_checks": [
+        {"file": "Groundwater flow.svg", "license": "Public Domain — USGS", "author": "T.C. Winter et al.", "status": "verified_on_commons_description_page"},
+        {"file": "Cone of depression - Pumping a well can cause water level lowering.png", "license": "Public Domain — U.S. Federal Government", "author": "Tara Gross / USGS", "status": "verified_on_commons_and_usgs_description_pages"},
+        {"file": "Los Angeles Coastal Plain Groundwater-flow Model (96716).jpg", "license": "Public Domain — USGS", "author": "USGS California Water Science Center", "status": "verified_on_commons_description_page"}
+      ],
+      "unconfirmed": []
+    }
+  ],
+  "notes": "第001期已有章鱼、土星环、板块构造；本期避开这些核心问题。计划发布2篇，均为经典百科主题。"
+}
