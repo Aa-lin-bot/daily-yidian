@@ -37,7 +37,7 @@ images:
     credit: Д.Ильин；图中理论曲线基于 Robert A. Rohde 的相关图示
     license: CC0 1.0 Universal Public Domain Dedication
   - path: assets/images/2026/09/10/sunset-clouds.jpg
-    download_url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Sunset_with_Clouds.jpg
+    download_url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Sunset_with_Clouds.jpg
     original_url: https://commons.wikimedia.org/wiki/File:Sunset_with_Clouds.jpg
     alt: 太阳接近地平线，云层被夕阳染成橙红色
     caption: 日落时更长的大气光程使暖色调更加突出
