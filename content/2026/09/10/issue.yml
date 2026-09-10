@@ -1,0 +1,9 @@
+issue: 2
+date: 2026-09-10
+publish_at: 2026-09-10T20:00:00+08:00
+title: 蓝天的光与脚下的水
+daily_summary: 今天从每天抬头都能看到的蓝天开始，理解光为什么会被大气选择性散射；再钻到脚下，看看地下水并非地下河，而是如何储存在岩石孔隙和裂隙中。
+cover_article: why-is-the-sky-blue
+articles:
+  - why-is-the-sky-blue
+  - how-groundwater-lives-in-rock
