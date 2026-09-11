@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-11",
+  "issue": 3,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-corals-bleach",
+      "title": "珊瑚为什么会“白化”？变白并不等于已经死亡",
+      "core_facts": [
+        {"claim": "珊瑚白化是珊瑚在压力下失去共生藻或其色素后显露白色骨骼的现象，白化不等于立即死亡。", "status": "verified", "sources": ["NOAA National Ocean Service", "Great Barrier Reef Marine Park Authority", "Smithsonian Ocean"]},
+        {"claim": "异常高温是当代大规模白化最重要的触发因素，强光、低盐、污染等也可造成或加剧压力。", "status": "verified", "sources": ["NOAA National Ocean Service", "Great Barrier Reef Marine Park Authority", "Biological Reviews 2024"]},
+        {"claim": "持续压力使失去共生藻的珊瑚面临能量不足、疾病和死亡风险；压力解除后部分珊瑚可恢复。", "status": "verified", "sources": ["NOAA National Ocean Service", "Smithsonian Ocean", "Great Barrier Reef Marine Park Authority"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Coral_Bleaching.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Coral_Bleaching.jpg", "final_status": 200, "content_verified_as_image": true, "license": "CC BY-SA 4.0", "license_status": "verified", "credit": "Logwo18"},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Coral_Reef_Bleaching.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Coral_Reef_Bleaching.jpg", "final_status": 200, "content_verified_as_image": true, "license": "CC BY 2.0", "license_status": "verified", "credit": "Jay Galvin"}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "how-circadian-clock-works",
+      "title": "为什么不看钟也会困？人体里真的有一套“生物钟”",
+      "core_facts": [
+        {"claim": "昼夜节律是内源性、接近24小时的生理与行为节律，分子时钟依靠时钟基因和蛋白反馈回路产生振荡。", "status": "verified", "sources": ["Nobel Prize 2017 scientific background", "Nature 2017 collection"]},
+        {"claim": "哺乳动物SCN是重要中央起搏器，接收来自眼睛的光信息并同步多种生理节律。", "status": "verified", "sources": ["NIGMS/NIH", "Nobel Prize 2017 scientific background"]},
+        {"claim": "黑暗后褪黑素通常上升，光照会抑制其产生并参与睡眠/觉醒节律校准。", "status": "verified", "sources": ["NICHD/NIH", "NIGMS/NIH"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Circadian_Rhythm.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Circadian_Rhythm.jpg", "final_status": 200, "content_verified_as_image": true, "license": "CC BY-SA 4.0", "license_status": "verified", "credit": "Blurrymcflurry"},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Circadian_rhythm_labeled.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Circadian_rhythm_labeled.jpg", "final_status": 200, "content_verified_as_image": true, "license": "Public Domain — U.S. Federal Government work", "license_status": "verified", "credit": "National Institute of General Medical Sciences / NIH"}
+      ],
+      "unconfirmed": []
+    }
+  ],
+  "history_review": {"requested_days": 180, "available_content_days": 2, "reviewed_dates": ["2026-09-09", "2026-09-10"], "note": "Repository currently contains only two published dates, so all available content was reviewed; no 180-day archive exists yet."}
+}
