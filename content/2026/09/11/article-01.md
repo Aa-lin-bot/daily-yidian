@@ -52,7 +52,7 @@ sources:
     url: https://ocean.si.edu/ocean-life/invertebrates/corals-and-coral-reefs
     tier: 1
     accessed: 2026-09-11
-  - title: Triggers, cascades, and endpoints: connecting the dots of coral bleaching mechanisms
+  - title: "Triggers, cascades, and endpoints: connecting the dots of coral bleaching mechanisms"
     organization: Biological Reviews
     url: https://onlinelibrary.wiley.com/doi/10.1111/brv.13042
     tier: 1
