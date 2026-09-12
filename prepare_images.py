@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import re
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse
@@ -41,7 +42,7 @@ def download(url: str, target: Path) -> None:
     tmp = target.with_suffix(target.suffix + ".part")
 
     last_error = None
-    for attempt in range(1, 4):
+    for attempt in range(1, 6):
         try:
             req = urllib.request.Request(
                 url,
@@ -71,12 +72,29 @@ def download(url: str, target: Path) -> None:
             os.replace(tmp, target)
             print(f"Downloaded {url} -> {target.relative_to(ROOT)}")
             return
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if tmp.exists():
+                tmp.unlink()
+            if attempt < 5:
+                retry_after = exc.headers.get("Retry-After")
+                if exc.code == 429:
+                    if retry_after and retry_after.isdigit():
+                        delay = max(5, int(retry_after))
+                    else:
+                        delay = min(30, attempt * 5)
+                else:
+                    delay = min(10, attempt * 2)
+                print(f"Download attempt {attempt} failed ({exc.code}); retrying in {delay}s: {url}")
+                time.sleep(delay)
         except Exception as exc:
             last_error = exc
             if tmp.exists():
                 tmp.unlink()
-            if attempt < 3:
-                time.sleep(attempt * 2)
+            if attempt < 5:
+                delay = min(10, attempt * 2)
+                print(f"Download attempt {attempt} failed; retrying in {delay}s: {url}")
+                time.sleep(delay)
 
     raise RuntimeError(f"Failed to download {url}: {last_error}")
 
@@ -108,6 +126,7 @@ def main() -> None:
             print(f"Using existing {target.relative_to(ROOT)}")
             continue
         download(url, target)
+        time.sleep(1.5)
 
     print(f"Prepared {len(images)} published image assets")
 
