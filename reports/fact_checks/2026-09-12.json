@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-12",
+  "issue": 4,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "how-dna-fits-in-nucleus",
+      "title": "近两米长的DNA，怎么塞进一个细胞核？",
+      "core_facts": [
+        {"claim": "人体典型二倍体细胞DNA完全伸展后接近2米，而细胞核尺度为数微米。", "status": "verified", "sources": ["NHGRI Nucleosome", "Nature Education DNA Packaging", "NCBI Chromosomes and Chromatin"]},
+        {"claim": "核小体核心由H2A、H2B、H3、H4各两份组成的组蛋白八聚体和约146个碱基对DNA构成。", "status": "verified", "sources": ["NCBI Genetics, DNA Packaging", "Nature Education DNA Packaging", "OpenStax"]},
+        {"claim": "染色质包装会影响转录等DNA过程的可及性，并可动态重塑。", "status": "verified", "sources": ["OpenStax", "Nature Education DNA Packaging", "NCBI Genetics, DNA Packaging"]}
+      ],
+      "unconfirmed": [],
+      "image_checks": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Nucleosome_structure.png", "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Nucleosome_structure.png", "final_status": 200, "content_verified_as_image": true, "license": "CC BY-SA 3.0", "license_verified": true},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Nucleosome.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Nucleosome.jpg", "final_status": 200, "content_verified_as_image": true, "license": "Public Domain — PD-self", "license_verified": true}
+      ]
+    },
+    {
+      "slug": "why-leaves-change-color",
+      "title": "秋天的叶子为什么会从绿色变成黄、橙和红？",
+      "core_facts": [
+        {"claim": "叶绿素降解后，原本存在的黄色和橙色类胡萝卜素更容易显现。", "status": "verified", "sources": ["NPS Yosemite Fall Color", "University of Illinois Extension", "NPS Why Do Leaves Change Colors"]},
+        {"claim": "许多红紫色秋叶的花青素在秋季衰老阶段合成，而非整个夏季都被叶绿素完整遮盖。", "status": "verified", "sources": ["US Forest Service Schaberg et al. 2008", "University of Illinois Extension", "NPS Yosemite Fall Color"]},
+        {"claim": "秋色强弱受树种、光照、温度、水分和糖代谢等多因素共同影响。", "status": "verified", "sources": ["NPS Yosemite Fall Color", "US Forest Service Schaberg et al. 2008", "University of Illinois Extension"]}
+      ],
+      "unconfirmed": [],
+      "image_checks": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Autumn_Maple_Leaves.JPG", "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Autumn_Maple_Leaves.JPG", "final_status": 200, "content_verified_as_image": true, "license": "CC0 1.0 Universal", "license_verified": true},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Maple_Leaves_in_Autumn.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Maple_Leaves_in_Autumn.jpg", "final_status": 200, "content_verified_as_image": true, "license": "CC BY-SA 3.0", "license_verified": true}
+      ]
+    }
+  ],
+  "notes": ["仓库当前正式 content 仅覆盖 2026-09-09 至 2026-09-11，尚无180天历史；已读取并比对仓库全部现有正式文章的标题、摘要、标签与核心问题。", "四个图片 download_url 均通过真实网络GET读取并返回可解析图片内容。"]
+}
