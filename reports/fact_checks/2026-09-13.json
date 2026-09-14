@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-13",
+  "issue": 5,
+  "status": "verified_draft",
+  "articles": [
+    {
+      "slug": "why-ocean-has-tides",
+      "title": "海水为什么每天会涨落？潮汐不只是月亮在“拉海水”",
+      "core_facts": [
+        {
+          "claim": "潮汐是月球和太阳作用下在海洋中传播的长周期波动，月球是主要起潮影响。",
+          "status": "verified",
+          "sources": ["NOAA National Ocean Service — What are tides?", "NASA Science — Tides"]
+        },
+        {
+          "claim": "月球引力在地球不同位置的差异形成两个主要潮汐隆起；许多海岸在一个月球日约24小时50分钟内经历两次高潮和两次低潮。",
+          "status": "verified",
+          "sources": ["NOAA National Ocean Service — How frequent are tides?", "NASA Science — Tides"]
+        },
+        {
+          "claim": "新月和满月附近太阳与月球的潮汐效应加强形成大潮；上弦和下弦附近部分抵消形成小潮。",
+          "status": "verified",
+          "sources": ["NASA Science — Tides", "University of Hawaiʻi at Mānoa — Tide Formation—Gravitational Pull"]
+        },
+        {
+          "claim": "实际海岸潮时与潮差还受大陆、海盆形状、水深及区域动力过程显著影响，不能只由月球是否在头顶判断。",
+          "status": "verified",
+          "sources": ["NASA Science — Tides", "NOAA National Ocean Service — Are tides higher when the moon is directly overhead?"]
+        }
+      ],
+      "image_checks": [
+        {
+          "file": "Tides.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Tides.jpg",
+          "final_http_status": 200,
+          "content_type": "image/jpeg",
+          "content_verified_as_image": true,
+          "author": "Page Quinton",
+          "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "status": "verified_real_get_and_commons_description_page"
+        },
+        {
+          "file": "Definitions of Spring and Neap tides.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Definitions_of_Spring_and_Neap_tides.jpg",
+          "final_http_status": 200,
+          "content_type": "image/jpeg",
+          "content_verified_as_image": true,
+          "author": "Clubsail",
+          "license": "Creative Commons Attribution 3.0 Unported",
+          "status": "verified_real_get_and_commons_description_page"
+        }
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "how-bone-remodeling-works",
+      "title": "骨头看起来不动，为什么其实一直在拆除和重建？",
+      "core_facts": [
+        {
+          "claim": "成年骨组织持续进行重塑，旧或受损骨由破骨细胞吸收，随后由成骨细胞形成并矿化新骨。",
+          "status": "verified",
+          "sources": ["NIAMS — What Is Bone?", "Bone Research — Bone remodeling: an operational process ensuring survival and bone mechanical competence"]
+        },
+        {
+          "claim": "破骨细胞可通过局部酸化溶解骨矿物，并通过蛋白水解酶分解骨基质。",
+          "status": "verified",
+          "sources": ["International Osteoporosis Foundation — Pathophysiology"]
+        },
+        {
+          "claim": "成骨细胞制造新骨，骨细胞是长期存在于骨中的细胞并参与协调破骨细胞和成骨细胞活动。",
+          "status": "verified",
+          "sources": ["NIAMS — What Is Bone?", "International Osteoporosis Foundation — Pathophysiology"]
+        },
+        {
+          "claim": "健康成人骨骼依赖骨吸收与骨形成的长期平衡；吸收持续超过形成会导致骨量下降和骨脆弱。",
+          "status": "verified",
+          "sources": ["NIAMS — What Is Bone?", "International Osteoporosis Foundation — Pathophysiology"]
+        }
+      ],
+      "image_checks": [
+        {
+          "file": "Osteoclast.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Osteoclast.jpg",
+          "final_http_status": 200,
+          "content_type": "image/jpeg",
+          "content_verified_as_image": true,
+          "author": "Robert M. Hunt",
+          "license": "Public Domain — released by author Robert M. Hunt",
+          "status": "verified_real_get_and_commons_description_page"
+        },
+        {
+          "file": "Osteoblast.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Osteoblast.jpg",
+          "final_http_status": 200,
+          "content_type": "image/jpeg",
+          "content_verified_as_image": true,
+          "author": "Gabriel Caponetti",
+          "license": "Creative Commons Attribution 3.0 Unported",
+          "status": "verified_real_get_and_commons_description_page"
+        }
+      ],
+      "unconfirmed": []
+    }
+  ],
+  "notes": "2026-09-13 原自动任务仅写入 placeholder 后清理未完成草稿。本报告于 2026-09-14 补发前重新完成事实核验、图片说明页许可核验和所有 download_url 的真实 GET 图片内容验证。"
+}

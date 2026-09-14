@@ -1,7 +1,7 @@
 ---
 id: 2026-09-14-001
 date: 2026-09-14
-issue: 5
+issue: 6
 title: 没有阳光，深海热液喷口为什么仍能养活一整套生态系统？
 slug: life-at-hydrothermal-vents
 category: 生命与自然

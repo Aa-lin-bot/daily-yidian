@@ -1,7 +1,7 @@
 ---
 id: 2026-09-14-002
 date: 2026-09-14
-issue: 5
+issue: 6
 title: 抗生素为什么能杀细菌，却治不了普通病毒感染？
 slug: why-antibiotics-do-not-work-on-viruses
 category: 人类与科学
