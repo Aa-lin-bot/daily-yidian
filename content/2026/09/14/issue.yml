@@ -1,0 +1,9 @@
+issue: 6
+date: 2026-09-14
+publish_at: 2026-09-14T20:00:00+08:00
+title: 黑暗海底的食物链与抗生素的边界
+daily_summary: 今天先潜入没有阳光的深海热液喷口，理解生命如何依靠化学能建立食物网；再回到日常医疗，弄清抗生素为什么能打击细菌，却不能治疗普通病毒感染。
+cover_article: life-at-hydrothermal-vents
+articles:
+  - life-at-hydrothermal-vents
+  - why-antibiotics-do-not-work-on-viruses
