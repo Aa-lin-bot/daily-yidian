@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-14",
+  "issue": 5,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "life-at-hydrothermal-vents",
+      "title": "没有阳光，深海热液喷口为什么仍能养活一整套生态系统？",
+      "core_facts": [
+        {
+          "claim": "热液喷口可由海水沿海底裂隙进入地壳、被高温岩石或岩浆加热后重新喷出形成。",
+          "status": "verified",
+          "sources": ["NOAA Ocean Exploration — Hydrothermal Vents and Volcanoes", "Smithsonian Ocean — The Microbes That Keep Hydrothermal Vents Pumping"]
+        },
+        {
+          "claim": "喷口生态系统的初级生产可由化能合成微生物完成，而不依赖阳光。",
+          "status": "verified",
+          "sources": ["NOAA PMEL — Chemosynthesis", "NOAA Ocean Exploration — Hydrothermal Vents and Volcanoes", "Smithsonian Ocean"]
+        },
+        {
+          "claim": "喷口微生物可利用硫化氢、氢、亚铁等无机物反应获得能量并固定碳。",
+          "status": "verified",
+          "sources": ["NOAA PMEL — Chemosynthesis", "Smithsonian Ocean"]
+        },
+        {
+          "claim": "巨型管虫等喷口动物可与化能合成细菌形成共生关系。",
+          "status": "verified",
+          "sources": ["NOAA PMEL — Chemosynthesis", "Smithsonian Ocean"]
+        }
+      ],
+      "images": [
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Main_Endeavour_black_smoker.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Main_Endeavour_black_smoker.jpg",
+          "credit": "National Oceanic and Atmospheric Administration",
+          "license": "Public Domain — U.S. NOAA work",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        },
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Nur04512.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Nur04512.jpg",
+          "credit": "NOAA / National Undersea Research Program",
+          "license": "Public Domain — U.S. NOAA work",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        }
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-antibiotics-do-not-work-on-viruses",
+      "title": "抗生素为什么能杀细菌，却治不了普通病毒感染？",
+      "core_facts": [
+        {
+          "claim": "抗生素不能治疗感冒、流感等病毒感染。",
+          "status": "verified",
+          "sources": ["CDC — Healthy Habits: Antibiotic Do's and Don'ts", "WHO — Antimicrobial resistance"]
+        },
+        {
+          "claim": "主要抗生素机制包括抑制细胞壁、蛋白质、核酸或代谢相关过程。",
+          "status": "verified",
+          "sources": ["PMC — Antibiotics: From Mechanism of Action to Resistance and Beyond", "PMC — Mechanistic Insights into Clinically Relevant Ribosome-Targeting Antibiotics"]
+        },
+        {
+          "claim": "病毒缺少典型细菌细胞壁与自主核糖体系统，依赖宿主细胞进行复制。",
+          "status": "verified",
+          "sources": ["CDC — Healthy Habits: Antibiotic Do's and Don'ts", "PMC antibiotic mechanism reviews"]
+        },
+        {
+          "claim": "不必要或错误使用抗生素会增加耐药性选择压力。",
+          "status": "verified",
+          "sources": ["WHO — Antimicrobial resistance", "CDC — Healthy Habits: Antibiotic Do's and Don'ts"]
+        }
+      ],
+      "images": [
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Antibiotic_susceptibility_disk_diffusion.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Antibiotic_susceptibility_disk_diffusion.jpg",
+          "credit": "Microrao",
+          "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        },
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Escherichia_coli_electron_microscopy.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Escherichia_coli_electron_microscopy.jpg",
+          "credit": "Janice Haney Carr",
+          "license": "Public Domain — released by the author",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        }
+      ],
+      "unconfirmed": []
+    }
+  ]
+}
