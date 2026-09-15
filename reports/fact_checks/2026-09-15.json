@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-15",
+  "issue": 7,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-venus-is-hotter-than-mercury",
+      "title": "为什么离太阳更远的金星，反而比水星更热？",
+      "core_facts": [
+        {
+          "claim": "NASA给出的平均表面温度约为水星167°C、金星464°C。",
+          "status": "verified",
+          "sources": ["NASA Science — Solar System Temperatures", "NASA Science — Venus Facts"]
+        },
+        {
+          "claim": "金星厚重且以二氧化碳为主的大气造成极强温室效应，使其成为太阳系表面最热的行星。",
+          "status": "verified",
+          "sources": ["NASA Science — Venus Facts", "ESA — Greenhouse effect, clouds and winds", "The Planetary Society — Life on Venus: Your Questions Answered"]
+        },
+        {
+          "claim": "水星缺乏厚重大气，昼夜温差极大，夜间可降至约-179°C。",
+          "status": "verified",
+          "sources": ["NASA Science — Solar System Temperatures", "The Planetary Society — Mercury, world of extremes"]
+        },
+        {
+          "claim": "行星温度由太阳能输入、反照率、大气吸收与红外散热等多种因素共同决定，距离不是唯一变量。",
+          "status": "verified",
+          "sources": ["NASA Science — Solar System Temperatures", "ESA — Greenhouse effect, clouds and winds"]
+        }
+      ],
+      "images": [
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Venus_as_captured_by_Mariner_10.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Venus_as_captured_by_Mariner_10.jpg",
+          "credit": "NASA",
+          "license": "Public Domain — NASA work",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "validation_path": "web_direct_fetch",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        },
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Mercury_Globe-MESSENGER_mosaic_centered_at_0degN-0degE.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Mercury_Globe-MESSENGER_mosaic_centered_at_0degN-0degE.jpg",
+          "credit": "NASA/JHUAPL",
+          "license": "Public Domain — NASA work",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "validation_path": "web_direct_fetch",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        }
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-mature-red-blood-cells-have-no-nucleus",
+      "title": "成熟红细胞为什么要把细胞核“丢掉”？",
+      "core_facts": [
+        {
+          "claim": "成熟哺乳动物红细胞通常无核、呈双凹圆盘状并含有血红蛋白。",
+          "status": "verified",
+          "sources": ["NCBI MeSH — Erythrocytes", "ASH/PMC — Red cell membrane disorders: structure meets function"]
+        },
+        {
+          "claim": "哺乳动物红细胞在终末分化阶段经历染色质凝缩与排核，形成无核网织红细胞并继续成熟。",
+          "status": "verified",
+          "sources": ["PMC — Formation of mammalian erythrocytes: chromatin condensation and enucleation", "PMC — Emerging concepts in mammalian erythrocytes"]
+        },
+        {
+          "claim": "无核化与血红蛋白装载、双凹形态和可变形性等功能特征相联系，但其演化驱动力不宜简化为单一原因。",
+          "status": "verified",
+          "sources": ["PMC — Formation of mammalian erythrocytes: chromatin condensation and enucleation", "PMC — Cellular dynamics of mammalian red blood cell production in the erythroblastic island niche", "ASH/PMC — Red cell membrane disorders: structure meets function"]
+        },
+        {
+          "claim": "成熟红细胞缺乏细胞核和多数膜性细胞器，因此不具备普通有核细胞的完整转录与常规自我维护能力。",
+          "status": "verified",
+          "sources": ["NCBI MeSH — Erythrocytes", "PMC — Emerging concepts in mammalian erythrocytes", "ASH/PMC — Red cell membrane disorders: structure meets function"]
+        }
+      ],
+      "images": [
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Red_White_Blood_cells.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Red_White_Blood_cells.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "credit": "Electron Microscopy Facility at the National Cancer Institute at Frederick",
+          "license": "Public Domain — U.S. Federal Government / NCI work",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "validation_path": "web_direct_fetch",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        },
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Red_blood_cells_illustration.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Red_blood_cells_illustration.jpg",
+          "credit": "Donald Bliss / National Cancer Institute",
+          "license": "Public Domain — released by author and U.S. NIH/NCI work",
+          "license_status": "verified_on_description_page",
+          "http_check": {
+            "method": "GET",
+            "validation_path": "web_direct_fetch",
+            "follow_redirects": true,
+            "final_status": 200,
+            "content_type": "image/jpeg",
+            "content_verified_as_image": true
+          }
+        }
+      ],
+      "unconfirmed": []
+    }
+  ]
+}
