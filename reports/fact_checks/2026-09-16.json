@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-16",
+  "issue": 8,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-ice-floats-on-water",
+      "title": "冰为什么会浮在水上？水结冰后反而“变轻”了",
+      "core_facts": [
+        {"claim": "普通冰密度低于液态水，水冻结时密度约下降9%。", "status": "verified", "sources": ["USGS Water Density", "Colorado State University BMB OER"]},
+        {"claim": "氢键使常压普通冰形成较开放的晶格，水分子平均排列比液态更疏松。", "status": "verified", "sources": ["USGS Water Density", "Colorado State University BMB OER", "Chemistry LibreTexts"]},
+        {"claim": "纯水在约3.98–4°C达到最大密度。", "status": "verified", "sources": ["USGS Water Density", "Chemistry LibreTexts"]},
+        {"claim": "淡水湖冬季通常从表面冻结，浮冰和水的热性质有助于下方保留液态水。", "status": "verified", "sources": ["USGS Water Density", "USGS Snow, Ice, and Permafrost"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Amundsen_Sea_Icebergs.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Amundsen_Sea_Icebergs.jpg", "credit": "NASA", "license": "Public Domain — NASA work", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Eiskristall_02.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Eiskristall_02.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org", "credit": "Larry-pilot", "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "how-cats-purr",
+      "title": "猫为什么会发出“呼噜声”？我们可能误解了它几十年",
+      "core_facts": [
+        {"claim": "严格定义的猫呼噜是低频连续声音，基频通常约25–30 Hz，可跨越呼气和吸气阶段。", "status": "verified", "sources": ["Scientific Reports 2025", "Current Biology 2023"]},
+        {"claim": "传统AMC模型认为约20–30 Hz的神经驱动喉部肌肉活动调节呼吸气流。", "status": "verified", "sources": ["Current Biology 2023", "University of Vienna publication record"]},
+        {"claim": "2023年实验中8个离体家猫喉头全部在无神经输入和主动肌肉收缩时产生25–30 Hz自维持振动。", "status": "verified", "sources": ["Current Biology 2023 / PubMed", "University of Vienna publication record"]},
+        {"claim": "猫声带中存在直径可达约4毫米的结缔组织团块，可能帮助产生异常低频。", "status": "verified", "sources": ["Current Biology 2023 / PubMed", "University of Vienna publication record"]},
+        {"claim": "索食呼噜可包含高频有声成分，使人类听者感到更急迫。", "status": "verified", "sources": ["Current Biology 2009 / University of Sussex"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Domestic_cat_portrait.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Domestic_cat_portrait.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org", "credit": "The Roving Rokibul", "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Domestic_cat_yawning.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Domestic_cat_yawning.jpg", "credit": "NiC00L147", "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}}
+      ],
+      "unconfirmed": []
+    }
+  ]
+}
