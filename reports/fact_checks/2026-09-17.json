@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-17",
+  "issue": 9,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-morpho-butterflies-look-blue",
+      "title": "蓝闪蝶为什么这么蓝？答案不在“蓝色颜料”里",
+      "core_facts": [
+        {"claim": "蓝闪蝶的明亮蓝色主要是由翅鳞微纳结构产生的结构色，而非单纯蓝色色素。", "status": "verified", "sources": ["Smithsonian Institution — What Makes this Butterfly Blue?", "Scientific Reports — Design of a structure with low incident and viewing angle dependence inspired by Morpho butterflies"]},
+        {"claim": "鳞片的多层脊状结构通过干涉等光学作用产生高反射蓝色。", "status": "verified", "sources": ["Scientific Reports — Design of a structure with low incident and viewing angle dependence inspired by Morpho butterflies", "Scientific Reports — Reproducing the hierarchy of disorder for Morpho-inspired, broad-angle color reflection"]},
+        {"claim": "结构中的一定程度无序有助于形成较宽角度的蓝色反射。", "status": "verified", "sources": ["Scientific Reports — Design of a structure with low incident and viewing angle dependence inspired by Morpho butterflies", "Scientific Reports — Reproducing the hierarchy of disorder for Morpho-inspired, broad-angle color reflection"]},
+        {"claim": "2026年报道的 Morpho helenor 实验发现发育期高温可使成蝶虹彩变暗，但对捕食和择偶的实际生态后果尚未确定。", "status": "verified", "sources": ["Smithsonian Tropical Research Institute — Hot Iridescence"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Morpho_m%C3%A9n%C3%A9laus.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Morpho_m%C3%A9n%C3%A9laus.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org", "credit": "Wisi eu", "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Morpho_menelaus.png", "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Morpho_menelaus.png", "credit": "Gregory Phillips", "license": "GNU Free Documentation License 1.2 or later", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_image_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/png", "content_verified_as_image": true}}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-stars-twinkle-but-planets-usually-do-not",
+      "title": "星星为什么会“眨眼”，行星却通常不会？",
+      "core_facts": [
+        {"claim": "日常快速恒星闪烁主要由地球大气湍流造成的折射变化引起。", "status": "verified", "sources": ["NASA GSFC — Imagine the Universe!", "ESO — Adaptive Optics", "University of Wisconsin–Madison"]},
+        {"claim": "行星具有有限视直径，多条经过不同大气区域的光路波动会部分平均，因此通常比恒星少闪烁。", "status": "verified", "sources": ["NASA GSFC — Imagine the Universe!", "University of Wisconsin–Madison", "Sky & Telescope — Stellar Scintillation"]},
+        {"claim": "低空恒星通常闪烁更明显，因为光线穿过更长的大气路径。", "status": "verified", "sources": ["NASA GSFC — Imagine the Universe!", "University of Wisconsin–Madison"]},
+        {"claim": "ESO 的激光导星可在约90千米高空激发钠原子，自适应光学利用导星测量大气畸变并实时校正。", "status": "verified", "sources": ["ESO — Four lasers light up Paranal", "ESO — Adaptive Optics"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Star_trails_(starstax).jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Star_trails_%28starstax%29.jpg/1280px-Star_trails_%28starstax%29.jpg", "credit": "A. Duro/ESO", "license": "Creative Commons Attribution 4.0 International", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Four_lasers_light_up_Paranal_(45564317841).jpg", "download_url": "https://www.eso.org/public/archives/images/screen/2017_11_18_upr_IMG_3305-laser-ok-CC.jpg", "credit": "ESO/P. Horálek", "license": "Creative Commons Attribution 2.0 Generic", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_image_fetch", "follow_redirects": true, "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}}
+      ],
+      "unconfirmed": []
+    }
+  ]
+}
