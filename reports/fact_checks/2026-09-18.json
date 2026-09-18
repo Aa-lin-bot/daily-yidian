@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-18",
+  "issue": 10,
+  "status": "verified",
+  "articles": [
+    {
+      "id": "2026-09-18-001",
+      "title": "海水为什么是咸的？盐并不是“蒸发出来”的",
+      "status": "verified",
+      "core_facts": [
+        {"claim": "海洋盐分的重要来源是陆地岩石风化释放的离子，经径流和河流进入海洋。", "status": "verified", "sources": ["USGS Why is the ocean salty?", "NOAA Why is the ocean salty?"]},
+        {"claim": "海底热液系统通过海水与洋壳岩石反应改变海水化学组成。", "status": "verified", "sources": ["NOAA Why is the ocean salty?", "USGS Why is the Ocean Salty?"]},
+        {"claim": "全球海水典型平均盐度约35‰。", "status": "verified", "sources": ["USGS Saline Water and Salinity", "NOAA Why is the ocean salty?", "NASA SVS A Decade of Sea Surface Salinity"]},
+        {"claim": "蒸发移走水而留下大部分盐分，因此可提高局部表层盐度。", "status": "verified", "sources": ["NOAA Sea Water", "NASA SVS A Decade of Sea Surface Salinity"]}
+      ],
+      "images": [
+        {"path": "assets/images/2026/09/18/aquarius-ocean-salinity.jpg", "original_url": "https://commons.wikimedia.org/wiki/File:AquariusFirstImage.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/AquariusFirstImage.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_validation": {"status": "verified", "license": "Public Domain — NASA work (PD-NASA)", "credit": "NASA"}},
+        {"path": "assets/images/2026/09/18/hydrothermal-mineral-sediments.jpg", "original_url": "https://commons.wikimedia.org/wiki/File:Minerals_sediments.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Minerals_sediments.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_validation": {"status": "verified", "license": "Public Domain — U.S. NOAA work (PD-USGov-NOAA)", "credit": "UCSB, University of South Carolina, NOAA, WHOI"}}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "id": "2026-09-18-002",
+      "title": "月亮为什么总是同一面朝着地球？它其实一直在自转",
+      "status": "verified",
+      "core_facts": [
+        {"claim": "月球自转周期与绕地球公转周期均约27.3天，因此保持同步自转。", "status": "verified", "sources": ["NASA Moon Facts", "NASA Tidal Locking", "NASA Moon Phases"]},
+        {"claim": "潮汐锁定源于长期引力潮汐作用和能量耗散，而不是月球停止自转。", "status": "verified", "sources": ["NASA Tidal Locking", "NASA Moon Viewing Tips"]},
+        {"claim": "月球远侧并非永久黑暗，也经历完整的昼夜和月相光照变化。", "status": "verified", "sources": ["NASA Moon Facts", "NASA Moon Phases", "NASA SVS The Moon's Far Side"]},
+        {"claim": "1959年月球3号首次传回月球远侧图像。", "status": "verified", "sources": ["NASA Moon Facts", "NASA SVS The Moon's Far Side"]}
+      ],
+      "images": [
+        {"path": "assets/images/2026/09/18/moon-far-side-artemis.png", "original_url": "https://commons.wikimedia.org/wiki/File:Far_side_of_the_Moon.png", "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Far_side_of_the_Moon.png", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/png"}, "license_validation": {"status": "verified", "license": "Public Domain — NASA work (PD-NASA)", "credit": "NASA"}},
+        {"path": "assets/images/2026/09/18/moon-farside-craters.jpg", "original_url": "https://commons.wikimedia.org/wiki/File:Craters_of_the_Far_Side_of_the_Moon.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Craters_of_the_Far_Side_of_the_Moon.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_validation": {"status": "verified", "license": "Public Domain — NASA work (PD-NASA)", "credit": "NASA, Digital Lunar Orbiter Photographic Atlas of the Moon"}}
+      ],
+      "unconfirmed": []
+    }
+  ]
+}
