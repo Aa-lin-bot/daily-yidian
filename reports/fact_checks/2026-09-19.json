@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-19",
+  "issue": 11,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-auroras-have-different-colors",
+      "title": "极光为什么有绿有红？天空其实在做一场“原子灯光秀”",
+      "verification_status": "verified",
+      "core_facts": [
+        {"fact": "极光由高能粒子碰撞并激发高层大气原子和分子，退激时发光。", "status": "verified", "sources": ["NASA Auroras", "NOAA Aurora Tutorial"]},
+        {"fact": "原子氧约557.7 nm发射产生常见绿色，约630.0 nm发射产生红色。", "status": "verified", "sources": ["NOAA Aurora Tutorial", "NASA Red and Green Aurora Australis"]},
+        {"fact": "氧的红绿发射与氮的蓝/粉紫发射对应不同典型高度和碰撞条件。", "status": "verified", "sources": ["NASA Auroras", "NASA The Atmosphere After Dark", "NOAA Aurora Tutorial"]},
+        {"fact": "数字相机可记录肉眼在暗处难以分辨的弱极光色彩。", "status": "verified", "sources": ["NOAA Aurora Tutorial"]}
+      ],
+      "sources_checked": [
+        {"url": "https://science.nasa.gov/sun/auroras/", "tier": 1, "status": "verified"},
+        {"url": "https://swpc-drupal.woc.noaa.gov/content/aurora-tutorial", "tier": 1, "status": "verified"},
+        {"url": "https://science.nasa.gov/sun/the-atmosphere-after-dark/", "tier": 1, "status": "verified"}
+      ],
+      "images": [
+        {"original_url": "https://science.nasa.gov/image-detail/amf-s39-342-026/", "download_url": "https://images-assets.nasa.gov/image/S39-342-026/S39-342-026~large.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified_as_image": true}, "license": "NASA Media Usage Guidelines — generally not subject to copyright in the United States", "license_status": "verified", "credit": "NASA / Johnson Space Center"},
+        {"original_url": "https://svs.gsfc.nasa.gov/31281", "download_url": "https://svs.gsfc.nasa.gov/vis/a030000/a031200/a031281/ISS067_20220817_192407_aurora_print.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified_as_image": true}, "license": "NASA Media Usage Guidelines — generally not subject to copyright in the United States", "license_status": "verified", "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center"}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-octopus-blood-is-blue",
+      "title": "章鱼为什么流“蓝色的血”？关键不是三颗心，而是铜",
+      "verification_status": "verified",
+      "core_facts": [
+        {"fact": "头足类使用含铜的血蓝蛋白运输氧，氧合后血淋巴呈蓝色。", "status": "verified", "sources": ["Smithsonian Ocean", "The Biological Bulletin"]},
+        {"fact": "章鱼有三颗心：两颗鳃心向鳃泵血，一颗体心向全身泵送富氧血。", "status": "verified", "sources": ["Smithsonian Ocean", "Monterey Bay Aquarium"]},
+        {"fact": "血蓝蛋白氧结合性能受温度、pH、盐度和离子等环境变量影响。", "status": "verified", "sources": ["The Biological Bulletin", "Smithsonian Ocean"]}
+      ],
+      "sources_checked": [
+        {"url": "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives", "tier": 1, "status": "verified"},
+        {"url": "https://www.journals.uchicago.edu/doi/full/10.1086/722472", "tier": 1, "status": "verified"},
+        {"url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/red-octopus", "tier": 2, "status": "verified"}
+      ],
+      "images": [
+        {"original_url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1903-background-canyons-media-octopus/", "download_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/04/octopus-hires-3.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified_as_image": true}, "license": "Public domain — NOAA U.S. federal government image, no third-party credit noted", "license_status": "verified against NOAA public-domain image policy and item credit", "credit": "NOAA Office of Ocean Exploration and Research, 2013 Northeast U.S. Canyons Expedition"},
+        {"original_url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1903-dailyupdates-july1-media-octopus/", "download_url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/05/octopus-hires-2.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_verified_as_image": true}, "license": "Public domain — NOAA U.S. federal government image, no third-party credit noted", "license_status": "verified against NOAA public-domain image policy and item credit", "credit": "NOAA Office of Ocean Exploration and Research, Windows to the Deep 2019"}
+      ],
+      "unconfirmed": []
+    }
+  ],
+  "license_policy_checks": [
+    {"organization": "NASA", "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/", "status": "verified"},
+    {"organization": "NOAA", "url": "https://oceanservice.noaa.gov/about/faq.html", "status": "verified"}
+  ],
+  "unconfirmed_items": []
+}
