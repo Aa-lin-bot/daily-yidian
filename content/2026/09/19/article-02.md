@@ -33,7 +33,7 @@ images:
     credit: NOAA Office of Ocean Exploration and Research, Windows to the Deep 2019
     license: Public domain — NOAA U.S. federal government image, no third-party credit noted
 sources:
-  - title: Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus
+  - title: "Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus"
     organization: Smithsonian Ocean
     url: https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives
     tier: 1
