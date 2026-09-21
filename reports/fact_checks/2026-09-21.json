@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-21",
+  "issue": 13,
+  "articles": [
+    {
+      "slug": "why-the-sky-is-blue",
+      "title": "天空为什么是蓝色的？真正的答案不只是‘蓝光更容易散射’",
+      "status": "verified",
+      "core_facts": [
+        {"fact": "空气分子对短波长可见光的瑞利散射更强，散射强度近似与波长四次方成反比。", "status": "verified", "sources": ["NASA Space Place", "NOAA NESDIS", "UNSW Physclips"]},
+        {"fact": "天空呈蓝而非紫还受太阳光谱、大气吸收和人眼对紫光较低敏感度影响。", "status": "verified", "sources": ["NOAA NESDIS", "NASA Space Place", "UCAR"]},
+        {"fact": "日落时光经过更长大气路径，更多短波长光被散射出直射光束。", "status": "verified", "sources": ["NASA Space Place", "NOAA NESDIS", "UNSW Physclips"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Blue_sky_image.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Blue_sky_image.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}, "license_validation": {"status": "verified", "credit": "Renukarenu1861", "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Red_sunset_on_sky.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Red_sunset_on_sky.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}, "license_validation": {"status": "verified", "credit": "Rosendahl", "license": "Public Domain — released into the public domain by the author"}}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-rivers-meander",
+      "title": "河流为什么总爱拐弯？一个小弯是怎样越长越大的",
+      "status": "verified",
+      "core_facts": [
+        {"fact": "曲流弯道外侧通常流速和侵蚀更强，内侧流速较低并发生沉积。", "status": "verified", "sources": ["USGS", "NPS", "MIT"]},
+        {"fact": "外岸侵蚀和内岸沉积会使曲流侧向并向下游迁移。", "status": "verified", "sources": ["NPS", "USGS"]},
+        {"fact": "曲流弯颈被切穿后，旧河湾可与主河道分离形成牛轭湖。", "status": "verified", "sources": ["NPS", "USGS"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Meandering_river_aerial_photography.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Meandering_river_aerial_photography.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}, "license_validation": {"status": "verified", "credit": "Steve Hillebrand / U.S. Fish and Wildlife Service", "license": "Public Domain — released into the public domain by the author"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Oxbow_lake.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Oxbow_lake.jpg", "http_validation": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}, "license_validation": {"status": "verified", "credit": "U.S. Geological Survey", "license": "Public Domain — U.S. Geological Survey work (PD-USGov-Interior-USGS)"}}
+      ],
+      "unconfirmed": []
+    }
+  ]
+}
