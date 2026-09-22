@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-22",
+  "issue": 14,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-autumn-leaves-change-color",
+      "title": "秋叶为什么会变红变黄？颜色不是简单地“藏在绿色下面”",
+      "status": "verified",
+      "core_facts": [
+        {"fact": "秋季叶片衰老时叶绿素分解加速，树木可回收其中的氮等营养。", "status": "verified", "sources": ["https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3817419.pdf", "https://harvardforest.fas.harvard.edu/education-opportunities/classic-outreach-resources/autumn-foliage-color/leaf-science/leaf-process/"]},
+        {"fact": "黄色/橙色常来自原已存在的类胡萝卜素在叶绿素减少后显露。", "status": "verified", "sources": ["https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3817419.pdf", "https://harvardforest.fas.harvard.edu/education-opportunities/classic-outreach-resources/autumn-foliage-color/leaf-science/leaf-pigments/"]},
+        {"fact": "许多红色秋叶的花青素是在衰老阶段新合成，糖分、光照和低温会影响其表达。", "status": "verified", "sources": ["https://harvardforest.fas.harvard.edu/education-opportunities/classic-outreach-resources/autumn-foliage-color/leaf-science/leaf-process/", "https://research.fs.usda.gov/treesearch/54143", "https://research.fs.usda.gov/treesearch/15618"]}
+      ],
+      "unconfirmed": [],
+      "images": [
+        {"path": "assets/images/2026/09/22/autumn-leaf.svg", "original_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Plants_Algae/Gina-Vong/Leaf.svg", "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Plants_Algae/Gina-Vong/Leaf.svg", "http_check": {"method": "github_raw_fetch", "final_status": 200, "content_validation": "valid_svg_xml"}, "license_check": {"status": "verified", "license": "CC0 1.0 Universal", "credit": "Gina Vong / Bioicons", "evidence": "Bioicons license-class directory cc-0; repository README requires per-icon license attribution."}},
+        {"path": "assets/images/2026/09/22/plant-cell.svg", "original_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_types/Durvesh-Burhade-&-Niliksha-Patel/Structure_of_Plant_Cell.svg", "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_types/Durvesh-Burhade-%26-Niliksha-Patel/Structure_of_Plant_Cell.svg", "http_check": {"method": "github_raw_fetch", "final_status": 200, "content_validation": "valid_svg_xml"}, "license_check": {"status": "verified", "license": "Creative Commons Attribution 4.0 International", "credit": "Durvesh Burhade and Niliksha Patel / Bioicons", "evidence": "Bioicons license-class directory cc-by-4.0; repository README requires attribution for CC BY icons."}}
+      ]
+    },
+    {
+      "slug": "why-mitochondria-have-own-dna",
+      "title": "线粒体为什么有自己的DNA？你的细胞里保存着一次远古“合并”的痕迹",
+      "status": "verified",
+      "core_facts": [
+        {"fact": "人类mtDNA约16500碱基对、37个基因，其中13个编码氧化磷酸化相关蛋白。", "status": "verified", "sources": ["https://www.medlineplus.gov/genetics/chromosome/mitochondrial-dna/", "https://www.ncbi.nlm.nih.gov/books/NBK27914/"]},
+        {"fact": "线粒体源于约20亿年前的细菌内共生事件，是当前主流且有分子系统发育支持的解释。", "status": "verified", "sources": ["https://www.nature.com/articles/s41586-021-03297-6", "https://www.nature.com/articles/srep07949"]},
+        {"fact": "人类线粒体和mtDNA通常主要经母系遗传。", "status": "verified", "sources": ["https://www.genome.gov/genetics-glossary/Mitochondria", "https://www.ncbi.nlm.nih.gov/books/NBK27914/", "https://pubmed.ncbi.nlm.nih.gov/23524114/"]}
+      ],
+      "unconfirmed": [],
+      "images": [
+        {"path": "assets/images/2026/09/22/mitochondrion.svg", "original_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Intracellular_components/jaiganesh/mitochondria.svg", "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Intracellular_components/jaiganesh/mitochondria.svg", "http_check": {"method": "github_raw_fetch", "final_status": 200, "content_validation": "valid_svg_xml"}, "license_check": {"status": "verified", "license": "CC0 1.0 Universal", "credit": "jaiganesh / Bioicons", "evidence": "Bioicons license-class directory cc-0; repository README requires per-icon license attribution."}},
+        {"path": "assets/images/2026/09/22/mitochondrial-network.svg", "original_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/Marnie-Maddock/simple_mitochondria_network.svg", "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/Marnie-Maddock/simple_mitochondria_network.svg", "http_check": {"method": "github_raw_fetch", "final_status": 200, "content_validation": "valid_svg_xml"}, "license_check": {"status": "verified", "license": "Creative Commons Attribution 4.0 International", "credit": "Marnie Maddock / Bioicons", "evidence": "Bioicons license-class directory cc-by-4.0; repository README requires attribution for CC BY icons."}}
+      ]
+    }
+  ],
+  "notes": [
+    "All four download URLs were fetched as raw GitHub resources and returned SVG XML content before draft creation.",
+    "YAML front matter and issue.yml parsed successfully with yaml.safe_load before commit."
+  ]
+}
