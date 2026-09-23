@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-23",
+  "issue": 15,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-astronauts-float-in-orbit",
+      "title": "宇航员为什么会飘起来？不是因为太空里没有重力",
+      "verification": "verified",
+      "unconfirmed": [],
+      "core_facts": [
+        {"fact": "国际空间站典型高度上的地球引力仍约为地面的九成。", "status": "verified", "sources": ["NASA What Is Microgravity?", "ESA Microgravity and parabolic flights", "Georgia State University HyperPhysics"]},
+        {"fact": "轨道失重主要来自飞船、宇航员和舱内物体共同自由落体，而非重力消失。", "status": "verified", "sources": ["NASA What Is Microgravity?", "ESA Microgravity and parabolic flights", "Georgia State University HyperPhysics"]},
+        {"fact": "国际空间站轨道速度约28000 km/h。", "status": "verified", "sources": ["NASA What Is Microgravity?"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Leland_Melvin_floating_in_Airlock.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Leland_Melvin_floating_in_Airlock.jpg", "license": "Public Domain (NASA, U.S. Government work)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Melvin_floating_water_inside_the_Space_Shuttle.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Melvin_floating_water_inside_the_Space_Shuttle.jpg", "license": "Public Domain (NASA, U.S. Government work)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "content_verified_as_image": true}}
+      ]
+    },
+    {
+      "slug": "why-two-high-tides",
+      "title": "为什么很多海岸一天有两次高潮？远离月球的一侧也会涨潮",
+      "verification": "verified",
+      "unconfirmed": [],
+      "core_facts": [
+        {"fact": "潮汐力来自月球引力在地球近侧、中心和远侧的差异，理想模型中形成两个潮汐隆起。", "status": "verified", "sources": ["NOAA Tides", "NASA Science Tides", "OpenStax Ocean Tides and the Moon"]},
+        {"fact": "一个月球日约24小时50分钟，许多半日潮地区相邻高潮平均约12小时25分钟。", "status": "verified", "sources": ["NOAA How frequent are tides?", "OpenStax University Physics: Tidal Forces"]},
+        {"fact": "太阳也产生潮汐；日月成一直线时形成大潮，近直角时形成小潮。", "status": "verified", "sources": ["NOAA Tides", "NASA Science Tides", "OpenStax Ocean Tides and the Moon"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Tidal_bulge.png", "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Tidal_bulge.png", "license": "Public Domain (released by author)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/png", "content_verified_as_image": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Marsh_tides_high.png", "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Marsh_tides_high.png", "license": "Public Domain (NOAA U.S. Government material)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/png", "content_verified_as_image": true}}
+      ]
+    }
+  ]
+}
