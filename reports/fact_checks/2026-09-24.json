@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-24",
+  "issue": 16,
+  "articles": [
+    {
+      "slug": "why-earthquakes-happen-suddenly",
+      "title": "地震为什么总是突然发生？岩石其实已经‘憋’了很久",
+      "status": "verified",
+      "core_facts": [
+        {"fact": "地震通常由断层突然滑动引起，板块持续运动而断层被摩擦锁住时会积累应变。", "status": "verified", "sources": ["USGS earthquake causes", "USGS Elastic Rebound", "BGS What causes earthquakes"]},
+        {"fact": "断层破裂释放的部分能量以地震波形式传播并造成地面摇动。", "status": "verified", "sources": ["USGS earthquake causes", "BGS What causes earthquakes"]},
+        {"fact": "弹性回跳是理解许多构造地震长期加载和快速释放过程的基础模型。", "status": "verified", "sources": ["USGS Elastic Rebound", "BGS What causes earthquakes"]}
+      ],
+      "unconfirmed": [],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Pswaves.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Pswaves.jpg", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_check": {"status": "verified", "license": "Public Domain (USGS)", "credit": "United States Geological Survey"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Pswaves.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Pswaves.jpg", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_check": {"status": "verified", "license": "Public Domain (USGS)", "credit": "United States Geological Survey"}}
+      ]
+    },
+    {
+      "slug": "why-ocean-looks-blue",
+      "title": "海水为什么看起来是蓝的？并不只是因为倒映了天空",
+      "status": "verified",
+      "core_facts": [
+        {"fact": "海面反射天空会影响观感，但清澈海水的蓝色主要来自水对不同波长光的选择性吸收与散射。", "status": "verified", "sources": ["NOAA Ocean Service", "WHOI", "Scripps"]},
+        {"fact": "红橙等较长波长在水中通常比蓝光更快衰减，蓝光能传播得更深。", "status": "verified", "sources": ["NOAA Ocean Service", "WHOI", "Scripps"]},
+        {"fact": "浮游植物、泥沙、水深和海底反射可使海水呈绿色、褐色或青绿色。", "status": "verified", "sources": ["NOAA Ocean Service", "WHOI", "Scripps"]}
+      ],
+      "unconfirmed": [],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:NOAA_Deep_Light_diagram3.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/NOAA_Deep_Light_diagram3.jpg", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_check": {"status": "verified", "license": "Public Domain (NOAA)", "credit": "National Oceanic and Atmospheric Administration"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Kelp_forest-blue.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kelp_forest-blue.jpg", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_verified": "image/jpeg"}, "license_check": {"status": "verified", "license": "Public Domain (NOAA)", "credit": "National Oceanic and Atmospheric Administration"}}
+      ]
+    }
+  ]
+}
