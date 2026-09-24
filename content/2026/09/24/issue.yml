@@ -1,0 +1,9 @@
+issue: 16
+date: 2026-09-24
+publish_at: 2026-09-24T20:00:00+08:00
+title: 地震如何突然发生，以及海水为什么偏蓝
+daily_summary: 从断层上长期积累后突然释放的弹性应变，到阳光进入海水后不同波长被选择性吸收：两个日常印象背后，都藏着能量与波传播的物理规律。
+cover_article: why-earthquakes-happen-suddenly
+articles:
+  - why-earthquakes-happen-suddenly
+  - why-ocean-looks-blue
