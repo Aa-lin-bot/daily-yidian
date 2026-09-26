@@ -18,13 +18,13 @@ quick_read:
   - "血管深度、直径和血液含氧状态都会改变静脉呈现的颜色。"
 evidence_status: verified
 images:
-  - path: assets/images/2026/09/25/red-blood-cells-microscope.jpg
-    download_url: "https://upload.wikimedia.org/wikipedia/commons/8/82/Red_blood_cells.jpg"
-    original_url: "https://commons.wikimedia.org/wiki/File:Red_blood_cells.jpg"
-    alt: "显微镜视野中的红细胞"
-    caption: "显微镜下的红细胞。"
-    credit: "Denise Chan"
-    license: "CC BY-SA 2.0"
+  - path: assets/images/2026/09/25/red-blood-cells-cdc-sem.jpg
+    download_url: "https://www.broadinstitute.org/files/news/images/2018/SEM_of_RBCs_CDC_PHIL_11693.jpg"
+    original_url: "https://wwwn.cdc.gov/phil/Details.aspx?pid=11693"
+    alt: "扫描电子显微镜下的红细胞"
+    caption: "扫描电子显微镜下可见红细胞典型的盘状形态。"
+    credit: "CDC / Sickle Cell Foundation of Georgia / Janice Haney Carr"
+    license: "Public domain (CDC Public Health Image Library)"
   - path: assets/images/2026/09/25/blood-cells-usaf-microscope.jpg
     download_url: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Blood_cells_090304-F-5951M-108.jpg"
     original_url: "https://commons.wikimedia.org/wiki/File:Blood_cells_090304-F-5951M-108.jpg"
