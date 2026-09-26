@@ -18,13 +18,13 @@ quick_read:
   - "大型猛禽翼展大，因此电杆结构与导线间距会显著影响触电风险。"
 evidence_status: verified
 images:
-  - path: assets/images/2026/09/25/bird-single-power-line.jpg
-    download_url: "https://upload.wikimedia.org/wikipedia/commons/d/df/Pigeon_on_Power_Line.jpg"
-    original_url: "https://commons.wikimedia.org/wiki/File:Pigeon_on_Power_Line.jpg"
-    alt: "一只鸽子停在架空电线上"
-    caption: "停在单根导线上的鸽子；两脚相距很近。"
-    credit: "ChasingFeathers"
-    license: "CC BY-SA 4.0"
+  - path: assets/images/2026/09/25/birds-power-lines-mbp.jpg
+    download_url: "https://objects.liquidweb.services/images/202112/inat_61c9db5cd36366.59461392.jpg"
+    original_url: "https://www.marylandbiodiversity.com/species/1119"
+    alt: "多只岩鸽停在架空电力线路上"
+    caption: "岩鸽停在架空线路上；只有跨接不同电势部件时才会形成危险电流路径。"
+    credit: "Wayne Longbottom / Maryland Biodiversity Project"
+    license: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
   - path: assets/images/2026/09/25/bird-safe-insulated-powerline.jpg
     download_url: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Power-line-insulated-conductors.jpg"
     original_url: "https://commons.wikimedia.org/wiki/File:Power-line-insulated-conductors.jpg"
