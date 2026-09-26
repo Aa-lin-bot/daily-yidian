@@ -18,20 +18,20 @@ quick_read:
   - "当水滴通过碰并或冰晶过程长大到足够重，才会形成雨、雪等降水。"
 evidence_status: verified
 images:
-  - path: assets/images/2026/09/26/cumulus-clouds-noaa-001.jpg
-    download_url: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Cumulus_clouds_-_NOAA.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
-    original_url: "https://commons.wikimedia.org/wiki/File:Cumulus_clouds_-_NOAA.jpg"
-    alt: "海面上方形成的积云"
-    caption: "海面上方发展的积云，部分云体正在向更强对流发展。"
-    credit: "NOAA Photo Library / NOAA Central Library / NSSL"
-    license: "Public Domain (U.S. Government work, NOAA)"
-  - path: assets/images/2026/09/26/cumulus-congestus-noaa-002.jpg
-    download_url: "https://upload.wikimedia.org/wikipedia/commons/d/de/Cumulus9_-_NOAA.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
-    original_url: "https://commons.wikimedia.org/wiki/File:Cumulus9_-_NOAA.jpg"
-    alt: "向上发展的浓积云"
-    caption: "一团明显向上发展的浓积云。"
-    credit: "Ralph F. Kresge / NOAA Historic NWS Collection"
-    license: "Public Domain (U.S. Government work, NOAA)"
+  - path: assets/images/2026/09/26/cumulus-cahokia-001.jpg
+    download_url: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cahokia_1.jpg"
+    original_url: "https://commons.wikimedia.org/wiki/File:Cahokia_1.jpg"
+    alt: "蓝天下向上发展的积云"
+    caption: "具有明显垂直发展的积云，展示了对流云体的典型外观。"
+    credit: "Carptrash"
+    license: "Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)"
+  - path: assets/images/2026/09/26/cumulus-rows-noaa-002.png
+    download_url: "https://www.nesdis.noaa.gov/s3/migrated/20180215-Gulfc.png"
+    original_url: "https://www.nesdis.noaa.gov/news/cumulus-cloud-rows-over-the-south"
+    alt: "卫星图像中的成排积云"
+    caption: "Suomi NPP 卫星观测到美国南部和墨西哥湾沿岸成排分布的积云。"
+    credit: "NOAA NESDIS / Suomi NPP VIIRS"
+    license: "Public domain (U.S. Government work, NOAA)"
 sources:
   - title: "CLOUD DEVELOPMENT"
     organization: "U.S. National Weather Service"
