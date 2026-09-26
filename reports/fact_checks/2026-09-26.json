@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-26",
+  "issue": 18,
+  "evidence_status": "verified",
+  "articles": [
+    {
+      "slug": "why-clouds-stay-in-the-sky",
+      "title": "云里有成吨的水，为什么不会整块掉下来？",
+      "status": "verified",
+      "core_facts": [
+        {
+          "claim": "典型云滴半径约20微米或更小；平均云滴静止空气终端速度约1.3厘米/秒。",
+          "status": "verified",
+          "sources": ["https://www.weather.gov/source/zhu/ZHU_Training_Page/clouds/cloud_development/clouds.htm"]
+        },
+        {
+          "claim": "云滴在上升气流中可长时间悬浮，长大后通过碰并或冰晶过程形成降水。",
+          "status": "verified",
+          "sources": ["https://www.weather.gov/source/zhu/ZHU_Training_Page/clouds/cloud_development/clouds.htm", "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/what-makes-it-rain", "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds"]
+        }
+      ],
+      "unconfirmed_items": [],
+      "images": [
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Cumulus_clouds_-_NOAA.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Cumulus_clouds_-_NOAA.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"},
+          "license_check": {"status": "verified", "license": "Public Domain (U.S. Government work, NOAA)", "credit": "NOAA Photo Library / NOAA Central Library / NSSL"}
+        },
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Cumulus9_-_NOAA.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Cumulus9_-_NOAA.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"},
+          "license_check": {"status": "verified", "license": "Public Domain (U.S. Government work, NOAA)", "credit": "Ralph F. Kresge / NOAA Historic NWS Collection"}
+        }
+      ]
+    },
+    {
+      "slug": "how-microwave-ovens-heat-food",
+      "title": "微波炉真的是从里面往外加热吗？水分子也不是在被“精准共振”",
+      "status": "verified",
+      "core_facts": [
+        {"claim": "磁控管产生微波；食物吸收微波能并转化为热，微波不会使食物具有放射性。", "status": "verified", "sources": ["https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens"]},
+        {"claim": "厚食物并非从中心向外烹调，内部仍主要依靠较热区域的热传导。", "status": "verified", "sources": ["https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens"]},
+        {"claim": "把2.45 GHz描述为水分子的专属共振频率并不准确，介电加热可涉及多种极性成分。", "status": "verified", "sources": ["https://www.wtamu.edu/~cbaird/sq/mobile/2014/10/15/why-are-the-microwaves-in-a-microwave-oven-tuned-to-water/", "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens"]},
+        {"claim": "Percy Spencer于1945年在雷达磁控管研究中注意到微波加热效应，早期微波炉约6英尺高、超过750磅。", "status": "verified", "sources": ["https://www.si.edu/collections/snapshot/microwave-oven"]}
+      ],
+      "unconfirmed_items": [],
+      "images": [
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Microwave_oven_(interior).jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Microwave_oven_%28interior%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"},
+          "license_check": {"status": "verified", "license": "CC BY-SA 3.0", "credit": "Mk2010"}
+        },
+        {
+          "original_url": "https://commons.wikimedia.org/wiki/File:Magnetron_detail.jpg",
+          "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Magnetron_detail.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"},
+          "license_check": {"status": "verified", "license": "CC BY-SA 4.0", "credit": "Schrauber5"}
+        }
+      ]
+    }
+  ]
+}
