@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-27",
+  "issue": 19,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-snowflakes-have-sixfold-symmetry",
+      "title": "雪花为什么总爱长成六角？不是因为“六”更漂亮",
+      "verification": "verified",
+      "core_facts": [
+        {"claim": "典型雪晶由水汽在冰晶上沉积生长，而非简单由雨滴冻结。", "status": "verified", "sources": ["NOAA NESDIS"]},
+        {"claim": "普通冰的六方晶体结构是雪晶六重对称的根源。", "status": "verified", "sources": ["NOAA NESDIS", "Caltech"]},
+        {"claim": "温度和水汽过饱和度改变雪晶形态；三重外观冰晶也确有观测。", "status": "verified", "sources": ["NOAA", "NOAA Institutional Repository"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Snowflake_magnified_usda.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Snowflake_magnified_usda.jpg", "license": "Public Domain (USDA U.S. federal government work)", "license_status": "verified", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "target_image_confirmed": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Real_snowflake_-_Flickr_-_Alexey_Kljatov_(4).jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Real_snowflake_-_Flickr_-_Alexey_Kljatov_%284%29.jpg", "license": "CC BY 4.0", "license_status": "verified", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "target_image_confirmed": true}}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-honeycombs-are-hexagonal",
+      "title": "蜂巢为什么是六边形？“最省蜡”只说对了一半",
+      "verification": "verified",
+      "core_facts": [
+        {"claim": "等面积平面分区中，正六边形蜂窝使总边界长度最小。", "status": "verified", "sources": ["Hales 2001"]},
+        {"claim": "蜂房邻居排列和蜜蜂建造行为影响最终多边形形状。", "status": "verified", "sources": ["Nazzi 2016, Scientific Reports"]},
+        {"claim": "4D X射线研究观察到蜜蜂依据中央脊上的预成六角模式直接建造蜂房。", "status": "verified", "sources": ["Franklin et al. 2022, Advanced Materials"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Honeycomb_Nankhari.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Honeycomb_Nankhari.jpg", "license": "CC BY-SA 4.0", "license_status": "verified", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "target_image_confirmed": true}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:HoneyComb.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/HoneyComb.jpg", "license": "CC BY-SA 4.0", "license_status": "verified", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "target_image_confirmed": true}}
+      ],
+      "unconfirmed": []
+    }
+  ],
+  "history_check": {"window_requested_days": 180, "repository_available_content": "2026-09-09 through 2026-09-26", "result": "no same core question found among all content currently present in repository"},
+  "notes": ["Local container DNS could not resolve upload.wikimedia.org; per fallback rule, image GET validation was completed through web_direct_fetch. All four selected image resources were directly fetched as JPEG images."]
+}
