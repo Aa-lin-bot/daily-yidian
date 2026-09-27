@@ -1,0 +1,9 @@
+issue: 19
+date: 2026-09-27
+publish_at: 2026-09-27T20:00:00+08:00
+title: 雪花为什么六角，以及蜂巢为什么偏爱六边形
+daily_summary: 从冰晶分子排列到蜂巢的建造行为与几何效率：相似的六边形背后，其实是两套完全不同的形成机制。
+cover_article: why-snowflakes-have-sixfold-symmetry
+articles:
+  - why-snowflakes-have-sixfold-symmetry
+  - why-honeycombs-are-hexagonal
