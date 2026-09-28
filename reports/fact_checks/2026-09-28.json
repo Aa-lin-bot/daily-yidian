@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-28",
+  "issue": 20,
+  "status": "verified",
+  "generation": {"source": "chatgpt-automation", "automated": true, "pipeline_version": "3.0"},
+  "articles": [
+    {
+      "slug": "why-deserts-have-large-day-night-temperature-swings",
+      "title": "沙漠为什么白天烫、晚上却能迅速变冷？关键不只是“沙子散热快”",
+      "verification_status": "verified",
+      "core_facts": [
+        {"claim": "干燥、少云的沙漠地表白天吸收强太阳辐射，夜间又容易通过红外辐射快速失热，形成较大的昼夜温差。", "status": "verified", "sources": ["NASA Earth Observatory: Where Is the Hottest Place on Earth?", "Caltech: Daily (Diurnal) Range of Temperature"]},
+        {"claim": "地表温度与规范测量的空气温度不同，裸露干旱地表在日照下可显著高于气温。", "status": "verified", "sources": ["NASA Earth Observatory: Where Is the Hottest Place on Earth?"]},
+        {"claim": "NOAA记录显示内华达高沙漠具有显著日温差，夏季白天可超过90°F而夜间可降至50多°F。", "status": "verified", "sources": ["NOAA/NWS: Climate of Reno, Nevada"]}
+      ],
+      "unconfirmed_items": [],
+      "images": [
+        {"path": "assets/images/2026/09/28/namib-landsat.jpg", "original_url": "https://commons.wikimedia.org/wiki/File:Namib_Desert_(Landsat).jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Namib_Desert_%28Landsat%29.jpg", "license": "Public Domain (NASA work; U.S. government)", "license_status": "verified", "author_or_institution": "NASA/USGS", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "verified_target_image"}},
+        {"path": "assets/images/2026/09/28/namib-iss.jpg", "original_url": "https://commons.wikimedia.org/wiki/File:The_Namib_Desert_on_Namibia%27s_Atlantic_coast_(1).jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_Namib_Desert_on_Namibia%27s_Atlantic_coast_%281%29.jpg", "license": "Public Domain (NASA work; U.S. government)", "license_status": "verified", "author_or_institution": "NASA", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "verified_target_image"}}
+      ]
+    },
+    {
+      "slug": "how-soap-removes-grease-with-surfactants",
+      "title": "肥皂为什么能把油污洗掉？并不是把油“溶进水里”那么简单",
+      "verification_status": "verified",
+      "core_facts": [
+        {"claim": "表面活性剂具有亲水和亲油/疏水区域，能在油水界面参与润湿、分散与增溶。", "status": "verified", "sources": ["Cleansing Formulations That Respect Skin Barrier Integrity", "University of Oklahoma Institute for Applied Surfactant Research"]},
+        {"claim": "IUPAC将胶束定义为表面活性剂在溶液中形成的胶体尺度聚集体。", "status": "verified", "sources": ["IUPAC Gold Book: micelle"]},
+        {"claim": "清洁剂中的表面活性剂可将疏水物质增溶进水相，随后通过冲洗移除。", "status": "verified", "sources": ["Cleansing Formulations That Respect Skin Barrier Integrity"]}
+      ],
+      "unconfirmed_items": [],
+      "images": [
+        {"path": "assets/images/2026/09/28/micelle.png", "original_url": "https://commons.wikimedia.org/wiki/File:Micelle.svg", "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Micelle.svg/960px-Micelle.svg.png", "license": "Public Domain (copyright holder dedication)", "license_status": "verified", "author_or_institution": "Smokefoot; original by Mariana Ruiz Villarreal and LadyofHats", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/png", "result": "verified_target_image"}},
+        {"path": "assets/images/2026/09/28/soap-bubble-surfactant.png", "original_url": "https://commons.wikimedia.org/wiki/File:Lipid_vesicle_vs_soap_bubble.svg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Lipid_vesicle_vs_soap_bubble.svg/960px-Lipid_vesicle_vs_soap_bubble.svg.png", "license": "Public Domain (copyright holder dedication)", "license_status": "verified", "author_or_institution": "MDougM", "http_check": {"method": "web_direct_fetch", "final_status": 200, "content_type": "image/png", "result": "verified_target_image"}}
+      ]
+    }
+  ]
+}
