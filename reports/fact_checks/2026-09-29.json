@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-29",
+  "issue": 21,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-cat-eyes-shine-in-the-dark",
+      "title": "猫的眼睛为什么会在黑暗里发光？它并不是自己在发光",
+      "verification_status": "verified",
+      "core_facts": [
+        {"claim": "猫视网膜后方的反光膜会把第一次未被吸收的光反射回视网膜，提高弱光利用率。", "status": "verified", "sources": ["Cornell University College of Veterinary Medicine", "Ollivier et al., Veterinary Ophthalmology (2004)"]},
+        {"claim": "眼辉来自外来光的眼内反射，并非猫眼主动产生可见光；完全无光时反光膜也无法产生视觉信息。", "status": "verified", "sources": ["Cornell University College of Veterinary Medicine", "PetMD"]},
+        {"claim": "反光膜是多种脊椎动物眼内的生物反射系统，与眼辉现象相关。", "status": "verified", "sources": ["Ollivier et al., Veterinary Ophthalmology (2004)", "Cornell University College of Veterinary Medicine"]}
+      ],
+      "unconfirmed_items": [],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Tapetum-lucidum-001.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Tapetum-lucidum-001.jpg", "license": "Creative Commons Attribution-ShareAlike 3.0 Unported", "credit": "Mdf", "license_status": "verified_on_description_page", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Black_cat_with_glowing_eyes.JPG", "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Black_cat_with_glowing_eyes.JPG", "license": "Creative Commons Attribution-ShareAlike 3.0 Unported", "credit": "Laveol", "license_status": "verified_on_description_page", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}}
+      ]
+    },
+    {
+      "slug": "does-glass-flow-over-centuries",
+      "title": "几百年的玻璃真的会慢慢往下流吗？老教堂窗户骗了很多人",
+      "verification_status": "verified",
+      "core_facts": [
+        {"claim": "常温窗玻璃是非晶固体；缺少晶体长程有序不等于处于普通液态。", "status": "verified", "sources": ["NIST", "Scientific American"]},
+        {"claim": "玻璃化转变具有动力学与热力学特征，其表征与时间尺度和测量方法有关。", "status": "verified", "sources": ["NIST", "Scientific American"]},
+        {"claim": "历史窗玻璃厚薄不均主要源于旧式制造工艺，不能作为玻璃数百年重力流动的证据。", "status": "verified", "sources": ["Corning Museum of Glass", "Scientific American"]},
+        {"claim": "室温下玻璃不会在历史时间尺度上发生足以解释老窗户厚薄差异的可见流动。", "status": "verified", "sources": ["Corning Museum of Glass", "Scientific American"]}
+      ],
+      "unconfirmed_items": [],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Silica.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Silica.jpg", "license": "Public domain", "credit": "Jdrewitt (colored derivative)", "license_status": "verified_on_description_page", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Window_Glass_01.JPG", "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Window_Glass_01.JPG", "license": "Public Domain Mark 1.0 / PD-old", "credit": "TTaylor; ancient window work", "license_status": "verified_on_description_page", "http_validation": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}}
+      ]
+    }
+  ],
+  "research_notes": {
+    "local_container_image_check": "DNS resolution failed for commons.wikimedia.org; per fallback rule, validation switched to web_direct_fetch against the upload.wikimedia.org original-file URLs.",
+    "topic_deduplication": "Checked repository content tree through 2026-09-28 and avoided previously published core questions; issue number follows issue 020.",
+    "yaml_validation": "issue.yml and both article Front Matters parsed successfully with yaml.safe_load before commit."
+  }
+}
