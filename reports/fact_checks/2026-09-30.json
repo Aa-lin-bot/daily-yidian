@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-30",
+  "issue": 22,
+  "status": "verified",
+  "articles": [
+    {
+      "slug": "why-water-has-surface-tension",
+      "title": "水面为什么像有一层膜？其实并没有真正的“膜”",
+      "status": "verified",
+      "core_facts": [
+        {"claim": "表面张力源于液体分子内聚作用及界面分子所处环境与内部不同。", "status": "verified", "sources": ["USGS Surface Tension and Water", "Chemistry LibreTexts 12.3"]},
+        {"claim": "水的强分子间作用（包括氢键）使其具有较高表面张力，小液滴趋向减少表面积。", "status": "verified", "sources": ["USGS Surface Tension and Water", "Chemistry LibreTexts 12.3"]},
+        {"claim": "回形针和水黾可在不刺破界面的条件下获得表面张力提供的支撑。", "status": "verified", "sources": ["USGS Surface Tension and Water", "Chemistry LibreTexts 12.3"]},
+        {"claim": "洗涤剂降低水的表面张力，提高润湿能力。", "status": "verified", "sources": ["USGS Surface Tension and Water"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Water_droplet_surface_tension.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Water_droplet_surface_tension.jpg", "license": "Creative Commons Attribution 4.0 International", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Water_surface_tension_1.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Water_surface_tension_1.jpg", "license": "Public domain", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Water_strider_-_surface_tension.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Water_strider_-_surface_tension.jpg", "license": "Creative Commons Attribution-ShareAlike 3.0 Unported", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}}
+      ],
+      "unconfirmed": []
+    },
+    {
+      "slug": "why-aurora-is-usually-green",
+      "title": "极光为什么大多是绿色的？红色极光其实还是氧在发光",
+      "status": "verified",
+      "core_facts": [
+        {"claim": "极光由高能粒子激发高层大气原子和分子，后者退激发时发光。", "status": "verified", "sources": ["NASA Science Auroras", "NOAA Aurora Tutorial", "NOAA Science On a Sphere Aurora"]},
+        {"claim": "最常见的绿色极光主要是原子氧557.7 nm发射。", "status": "verified", "sources": ["NOAA Aurora Tutorial", "NOAA Science On a Sphere Aurora"]},
+        {"claim": "原子氧也产生约630.0 nm红光，红色发射更适合高空低碰撞环境。", "status": "verified", "sources": ["NASA Science Auroras", "NOAA Aurora Tutorial", "NOAA Science On a Sphere Aurora"]},
+        {"claim": "氮相关发射贡献蓝、紫、粉色，颜色与高度和粒子能量有关。", "status": "verified", "sources": ["NASA Science Auroras", "NOAA Aurora Tutorial"]}
+      ],
+      "images": [
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Aurora_Borealis.jpg", "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Aurora_Borealis.jpg", "license": "Public domain (NASA)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}},
+        {"original_url": "https://commons.wikimedia.org/wiki/File:Aurora_Australis_From_ISS.JPG", "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Aurora_Australis_From_ISS.JPG", "license": "Public domain (NASA)", "license_status": "verified_on_description_page", "http_check": {"method": "GET", "validation_path": "web_direct_fetch", "final_status": 200, "content_type": "image/jpeg", "result": "target_image_rendered"}}
+      ],
+      "unconfirmed": []
+    }
+  ],
+  "generation_notes": {
+    "local_container_network": "DNS resolution failed for commons.wikimedia.org; per fallback rule this was not treated as URL failure.",
+    "download_validation": "All final download URLs were fetched through web_direct_fetch using direct resource retrieval and rendered as image resources with HTTP 200."
+  }
+}
