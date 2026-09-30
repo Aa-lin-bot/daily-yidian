@@ -1,0 +1,9 @@
+issue: 22
+date: 2026-09-30
+publish_at: 2026-09-30T20:00:00+08:00
+title: "水面为什么像有一层膜，以及极光为什么常常是绿色"
+daily_summary: "从液体表面的分子内聚，到高层大气中氧原子的特征发光：两个熟悉现象背后，分别连接分子作用力与空间天气。"
+cover_article: why-water-has-surface-tension
+articles:
+  - why-water-has-surface-tension
+  - why-aurora-is-usually-green
